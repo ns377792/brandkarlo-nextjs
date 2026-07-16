@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brandkarlo.vercel.app/sitemap.xml
+
+# AI/LLM discovery file
+# https://brandkarlo.vercel.app/llms.txt
