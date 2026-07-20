@@ -45,4 +45,4 @@ npm run start
 
 - Images use plain `<img>` tags (not `next/image`) to keep the conversion 1:1 with the original markup. Swapping to `next/image` would improve performance (automatic sizing/lazy-loading) but is a bigger structural change.
 - Bootstrap's JS bundle is loaded from a CDN, matching the original site; you could swap this for the `bootstrap` npm package if you prefer bundling it yourself.
-- Blog posts and project cards are still hard-coded JSX (mirroring the original static markup). If you want to manage them from a CMS or a JSON/MDX data file, that's the next natural step.
+- Blog posts and project cards are still hard-coded JSX (mirroring the original static markup). If you want to manage them from a CMS or a JSON/MDX data file, that's the next natural step.  
