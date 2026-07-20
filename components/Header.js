@@ -37,7 +37,7 @@ export default function Header() {
     >
       <Link href="/" className="navbar-brand p-0">
         <p className="navbar-logo m-0">
-          <i className="fa fa-search me-2" aria-hidden="true"></i>Brand
+          <i className="fa fa-bullhorn me-2" aria-hidden="true"></i>Brand
           <span className="fs-5">Karlo</span>
         </p>
       </Link>
