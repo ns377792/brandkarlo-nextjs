@@ -674,6 +674,32 @@ h6,
     }
 }
 
+/*** Service detail pages (reuse .ns-about-container look) ***/
+.ns-service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf3ff;
+    color: #0076ff;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.ns-service-back {
+    text-align: center;
+    margin-top: 15px;
+}
+.ns-service-back a {
+    color: #0076ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.ns-service-back a:hover {
+    text-decoration: underline;
+}
+
 
 /* =======================================================================
    PORTFOLIO SECTION

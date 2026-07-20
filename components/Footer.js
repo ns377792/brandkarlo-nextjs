@@ -25,12 +25,13 @@ export default function Footer() {
           </div>
           <div className="col-md-6 col-lg-3">
             <p className="text-white mb-4 fw-medium fs-5">Our Services</p>
-            <Link className="btn btn-link" href="/service#seo-detail">Search Engine Optimization</Link>
-            <Link className="btn btn-link" href="/service#web-design-detail">Website Design &amp; Development</Link>
-            <Link className="btn btn-link" href="/service#social-media-detail">Social Media Marketing</Link>
-            <Link className="btn btn-link" href="/service#ai-automation-detail">AI Marketing Automation</Link>
-            <Link className="btn btn-link" href="/service#ppc-detail">Google Ads (PPC)</Link>
-            <Link className="btn btn-link" href="/service#branding-detail">Branding &amp; Graphic Design</Link>
+            <Link className="btn btn-link" href="/service/seo">SEO</Link>
+            <Link className="btn btn-link" href="/service/social-media-marketing">Social Media Marketing</Link>
+            <Link className="btn btn-link" href="/service/content-marketing">Content Marketing</Link>
+            <Link className="btn btn-link" href="/service/email-marketing">Email Marketing</Link>
+            <Link className="btn btn-link" href="/service/google-ads-meta-ads">Google Ads &amp; Meta Ads</Link>
+            <Link className="btn btn-link" href="/service/website-development">Website Development</Link>
+            <Link className="btn btn-link" href="/service">View All Services</Link>
           </div>
 
           <div className="col-md-6 col-lg-3">

@@ -1,0 +1,61 @@
+import Link from "next/link";
+
+export default function ServiceDetail({ service }) {
+  return (
+    <>
+      <div className="navbar-offset-spacer"></div>
+
+      <div className="ns-about-container ns-service-container">
+        <div className="ns-service-icon">
+          <i className={`fa ${service.icon}`}></i>
+        </div>
+
+        <h1>{service.fullTitle}</h1>
+        <div className="subtitle">{service.subtitle}</div>
+
+        <p>{service.intro}</p>
+        <p>{service.intro2}</p>
+
+        <h2>What's Included</h2>
+        <ul>
+          {service.whatWeDo.map((item, i) => {
+            const [label, ...rest] = item.split(": ");
+            return (
+              <li key={i}>
+                <strong>{label}:</strong> {rest.join(": ")}
+              </li>
+            );
+          })}
+        </ul>
+
+        <h2>Why Choose BrandKarlo for {service.title}?</h2>
+        <ul>
+          {service.whyChoose.map((item, i) => {
+            const [label, ...rest] = item.split(": ");
+            return (
+              <li key={i}>
+                <strong>{label}:</strong> {rest.join(": ")}
+              </li>
+            );
+          })}
+        </ul>
+
+        <h2>Ready to Get Started?</h2>
+        <p>
+          Let's talk about how our {service.title} services can help grow
+          your business online.
+        </p>
+
+        <div className="btn-container">
+          <Link href="/get-free-consultation" className="cta-btn">
+            Get Free Consultation
+          </Link>
+        </div>
+
+        <div className="ns-service-back">
+          <Link href="/service">&larr; Back to All Services</Link>
+        </div>
+      </div>
+    </>
+  );
+}
