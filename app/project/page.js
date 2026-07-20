@@ -3,6 +3,9 @@ import FilterGrid from "@/components/FilterGrid";
 export const metadata = {
   title: "Our Projects | Digital Marketing Portfolio – BrandKarlo",
   description: "Browse BrandKarlo's recent client projects across web design, SEO, Google Ads, branding and social media marketing.",
+  alternates: {
+    canonical: "/project",
+  },
 };
 
 export default function Page() {

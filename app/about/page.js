@@ -1,6 +1,9 @@
 export const metadata = {
   title: "About BrandKarlo | Our Digital Marketing Agency Story",
   description: "Learn how BrandKarlo helps startups, local businesses and growing brands build a powerful online presence through strategic, data-driven digital marketing.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function Page() {

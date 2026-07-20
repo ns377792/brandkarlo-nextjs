@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Careers at BrandKarlo | Join Our Digital Marketing Team",
   description: "Explore career opportunities at BrandKarlo and join a growing digital marketing agency helping brands succeed online.",
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function Page() {

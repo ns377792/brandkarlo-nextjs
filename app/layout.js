@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
 
 export const metadata = {
-  metadataBase: new URL("https://brandkarlo.vercel.app"),
+  metadataBase: new URL("https://brandkarlo.in"),
   title: {
     default: "BrandKarlo | Digital Marketing Agency in India – SEO, Ads & Web Design",
     template: "%s | BrandKarlo",
@@ -18,14 +18,27 @@ export const metadata = {
     "digital marketing agency India, SEO services, Google Ads agency, social media marketing, website development, BrandKarlo",
   authors: [{ name: "BrandKarlo" }],
   icons: { icon: "/favicon.ico" },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     siteName: "BrandKarlo",
+    url: "https://brandkarlo.in/",
     images: ["/img/hero.png"],
   },
   twitter: {
     card: "summary_large_image",
     images: ["/img/hero.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
 };
 
@@ -54,8 +67,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "MarketingAgency",
               name: "BrandKarlo",
-              url: "https://brandkarlo.vercel.app/",
-              image: "https://brandkarlo.vercel.app/img/hero.png",
+              url: "https://brandkarlo.in/",
+              image: "https://brandkarlo.in/img/hero.png",
               description:
                 "BrandKarlo is India's trusted digital marketing agency helping startups, local businesses and growing brands achieve measurable growth through SEO, Google Ads, social media marketing and website development.",
               address: {
@@ -67,7 +80,13 @@ export default function RootLayout({ children }) {
               },
               telephone: "+91-8375948879",
               email: "Contact@iamnitinsingh.in",
-              sameAs: [],
+              sameAs: [
+                "https://facebook.com/brandkarlo",
+                "https://twitter.com/brandkarlo",
+                "https://instagram.com/brandkarlo",
+                "https://linkedin.com/company/brandkarlo",
+                "https://youtube.com/@brandkarlo",
+              ],
             }),
           }}
         />

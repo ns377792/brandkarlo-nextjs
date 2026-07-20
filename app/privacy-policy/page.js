@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Privacy Policy | BrandKarlo Digital Marketing Agency",
   description: "Read BrandKarlo's privacy policy to understand how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function Page() {
@@ -21,7 +24,7 @@ export default function Page() {
                     <div className="col-lg-9 static-page-content">
                         <p><em>Last updated: July 2026</em></p>
 
-                        <p>BrandKarlo we operates the brandkarlo.vercel.app website. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our site or use our services.</p>
+                        <p>BrandKarlo we operates the brandkarlo.in website. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our site or use our services.</p>
 
                         <h2>Information We Collect</h2>
                         <ul>

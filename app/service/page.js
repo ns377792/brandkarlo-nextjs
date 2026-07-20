@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Our Services | SEO, Google Ads, Web Design & More – BrandKarlo",
   description: "Explore BrandKarlo's digital marketing services: SEO, website design & development, social media marketing, Google Ads, branding, and AI marketing automation.",
+  alternates: {
+    canonical: "/service",
+  },
 };
 
 export default function Page() {

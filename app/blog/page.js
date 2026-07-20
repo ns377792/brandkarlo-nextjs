@@ -3,6 +3,9 @@ import BlogFilterPagination from "@/components/BlogFilterPagination";
 export const metadata = {
   title: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo",
   description: "Stay updated with the latest digital marketing trends, proven strategies, and expert insights from BrandKarlo to grow your business online.",
+  alternates: {
+    canonical: "/blog",
+  },
 };
 
 export default function Page() {

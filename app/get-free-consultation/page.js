@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Get a Free Consultation | BrandKarlo Digital Marketing Agency",
   description: "Book a free consultation with BrandKarlo and discover the best SEO, Google Ads and digital marketing strategy tailored for your business.",
+  alternates: {
+    canonical: "/get-free-consultation",
+  },
 };
 
 export default function Page() {

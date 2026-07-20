@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
   description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function Page() {

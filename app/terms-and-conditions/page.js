@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Terms & Conditions | BrandKarlo Digital Marketing Agency",
   description: "Read the terms and conditions for using BrandKarlo's website and digital marketing services.",
+  alternates: {
+    canonical: "/terms-and-conditions",
+  },
 };
 
 export default function Page() {

@@ -1,6 +1,9 @@
 export const metadata = {
   title: "Contact Us | Get in Touch with BrandKarlo Digital Marketing Agency",
   description: "Get in touch with BrandKarlo for a free consultation. Reach our digital marketing team in New Delhi, India by phone, email or contact form.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function Page() {

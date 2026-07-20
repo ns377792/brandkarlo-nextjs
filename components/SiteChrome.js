@@ -99,6 +99,17 @@ export default function SiteChrome() {
       >
         <i className="bi bi-arrow-up" aria-hidden="true"></i>
       </a>
+
+      <a
+        href="https://wa.me/918375948879"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+      >
+        <i className="fab fa-whatsapp" aria-hidden="true"></i>
+        <span className="whatsapp-tooltip" role="tooltip">Chat with us on WhatsApp</span>
+      </a>
     </>
   );
 }
