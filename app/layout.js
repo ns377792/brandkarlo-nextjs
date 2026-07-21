@@ -81,11 +81,11 @@ export default function RootLayout({ children }) {
               telephone: "+91-8375948879",
               email: "Contact@iamnitinsingh.in",
               sameAs: [
-                "https://facebook.com/brandkarlo",
-                "https://twitter.com/brandkarlo",
-                "https://instagram.com/brandkarlo",
-                "https://linkedin.com/company/brandkarlo",
-                "https://youtube.com/@brandkarlo",
+                "https://www.facebook.com/profile.php?id=61591983697228",
+                "https://x.com/brand_karlo",
+                "https://www.instagram.com/brand_karlo/",
+                "https://www.linkedin.com/in/nitin-thakur-11326327a/",
+                "https://youtube.com/@Brand_Karlo",
               ],
             }),
           }}

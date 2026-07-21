@@ -40,11 +40,11 @@ export default function Footer() {
             <p><i className="fa fa-phone-alt me-3"></i>+91 8375948879</p>
             <p><i className="fa fa-envelope me-3"></i>Contact@iamnitinsingh.in</p>
             <div className="d-flex pt-2">
-              <a className="btn btn-outline-light btn-social" href="https://x.com/brand_karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Twitter"><i className="fab fa-twitter"></i></a>
+              <a className="btn btn-outline-light btn-social" href="https://x.com/brand_karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on X"><i className="fab fa-x-twitter"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61591983697228" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Facebook"><i className="fab fa-facebook-f"></i></a>
-              <a className="btn btn-outline-light btn-social" href="youtube.com/@Brand_Karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on YouTube"><i className="fab fa-youtube"></i></a>
+              <a className="btn btn-outline-light btn-social" href="https://youtube.com/@Brand_Karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on YouTube"><i className="fab fa-youtube"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/brand_karlo/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
-              <a className="btn btn-outline-light btn-social" href="https://linkedin.com/company/brandkarlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/nitin-thakur-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>

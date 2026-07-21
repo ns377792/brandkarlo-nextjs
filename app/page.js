@@ -155,10 +155,10 @@ export default function Page() {
                         </div>
                         <div className="d-flex align-items-center mt-4">
                             <a className="btn btn-primary rounded-pill px-4 me-3" href="/about">Read More</a>
-                            <a className="btn btn-outline-primary btn-square me-3" href="https://facebook.com/brandkarlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Facebook"><i className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-outline-primary btn-square me-3" href="https://twitter.com/brandkarlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Twitter"><i className="fab fa-twitter"></i></a>
-                            <a className="btn btn-outline-primary btn-square me-3" href="https://instagram.com/brandkarlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
-                            <a className="btn btn-outline-primary btn-square" href="https://linkedin.com/company/brandkarlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                            <a className="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/profile.php?id=61591983697228" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Facebook"><i className="fab fa-facebook-f"></i></a>
+                            <a className="btn btn-outline-primary btn-square me-3" href="https://x.com/brand_karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on X"><i className="fab fa-x-twitter"></i></a>
+                            <a className="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/brand_karlo/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
+                            <a className="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/nitin-thakur-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -533,7 +533,7 @@ export default function Page() {
           <p className="card-desc">Personal portfolio website with modern design, SEO optimization &amp; fast performance.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#iamnitinsingh-portfolio" className="view-link">View Project <span className="arrow">→</span></a>
+          <a href="/project/iamnitinsingh-portfolio" className="view-link">View Project <span className="arrow">→</span></a>
         </div>
       </article>
 
@@ -554,7 +554,7 @@ export default function Page() {
           <p className="card-desc">Educational toy eCommerce store built on Shopify with clean UI &amp; high conversion focus.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#activechamp-shopify" className="view-link">View Project <span className="arrow">→</span></a>
+          <a href="/project/activechamp-shopify" className="view-link">View Project <span className="arrow">→</span></a>
         </div>
       </article>
 
@@ -575,7 +575,7 @@ export default function Page() {
           <p className="card-desc">Complete SEO campaign that increased organic traffic by 240% in 6 months.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#business-growth-seo" className="view-link">View Case Study <span className="arrow">→</span></a>
+          <a href="/project/business-growth-seo" className="view-link">View Case Study <span className="arrow">→</span></a>
         </div>
       </article>
 
@@ -596,7 +596,7 @@ export default function Page() {
           <p className="card-desc">High-performing Google Ads campaign driving qualified leads at a low cost per click.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#lead-generation-ads" className="view-link">View Case Study <span className="arrow">→</span></a>
+          <a href="/project/lead-generation-ads" className="view-link">View Case Study <span className="arrow">→</span></a>
         </div>
       </article>
 
@@ -617,7 +617,7 @@ export default function Page() {
           <p className="card-desc">Complete brand identity &amp; packaging design for an organic skincare label.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#forest-co-skincare" className="view-link">View Project <span className="arrow">→</span></a>
+          <a href="/project/kitabiduniya-branding" className="view-link">View Project <span className="arrow">→</span></a>
         </div>
       </article>
 
@@ -638,7 +638,7 @@ export default function Page() {
           <p className="card-desc">Creative content strategy that boosted engagement and follower growth across platforms.</p>
         </div>
         <div className="card-footer">
-          <a href="/project#engaging-social-campaigns" className="view-link">View Project <span className="arrow">→</span></a>
+          <a href="/project/engaging-social-campaigns" className="view-link">View Project <span className="arrow">→</span></a>
         </div>
       </article>
 

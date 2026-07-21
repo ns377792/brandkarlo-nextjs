@@ -403,7 +403,8 @@ h6,
 /*** Service ***/
 .service-item {
     position: relative;
-    height: auto;
+    min-height: 350px;
+    height: 100%;
     padding: 30px 25px;
     background: #FFFFFF;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
@@ -699,6 +700,33 @@ h6,
 .ns-service-back a:hover {
     text-decoration: underline;
 }
+
+/*** Project detail pages ***/
+.ns-project-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px 0 25px;
+}
+.ns-project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.ns-project-tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+.ns-project-tag-blue    { background: #e6ecff; color: #3f5efb; }
+.ns-project-tag-green   { background: #e3f8ea; color: #16a34a; }
+.ns-project-tag-purple  { background: #f0e9ff; color: #7c3aed; }
+.ns-project-tag-yellow  { background: #fef4d9; color: #d69e04; }
+.ns-project-tag-emerald { background: #dff5ec; color: #059669; }
+.ns-project-tag-orange  { background: #ffe9d6; color: #ea7c1f; }
 
 
 /* =======================================================================

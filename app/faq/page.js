@@ -46,7 +46,7 @@ export default function Page() {
                                 </h2>
                                 <div id="faqCollapse2" className="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                                     <div className="accordion-body">
-                                        Most clients start seeing meaningful improvements in 3 to 6 months, depending on competition and starting point. One of our recent campaigns increased organic traffic by 240% within 6 months — see the <a href="/project#business-growth-seo">case study</a>.
+                                        Most clients start seeing meaningful improvements in 3 to 6 months, depending on competition and starting point. One of our recent campaigns increased organic traffic by 240% within 6 months — see the <a href="/project/business-growth-seo">case study</a>.
                                     </div>
                                 </div>
                             </div>
