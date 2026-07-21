@@ -6,9 +6,11 @@ export default function ProjectDetail({ project }) {
       <div className="navbar-offset-spacer"></div>
 
       <div className="ns-about-container ns-service-container">
-        <span className={`ns-project-tag ns-project-tag-${project.metaColor}`}>
-          {project.tag}
-        </span>
+        <div className="ns-service-icon ns-project-icon-wrap">
+          <span className={`ns-project-tag ns-project-tag-${project.metaColor}`}>
+            {project.tag}
+          </span>
+        </div>
 
         <h1>{project.title}</h1>
         <div className="subtitle">{project.categoryLabel}</div>
@@ -19,27 +21,26 @@ export default function ProjectDetail({ project }) {
 
         <p>{project.shortDesc}</p>
 
-        <h2>Challenge</h2>
-        <p>{project.challenge}</p>
-
-        <h2>Solution</h2>
-        <p>{project.solution}</p>
-
-        <h2>Result</h2>
-        <p>{project.result}</p>
-
-        {project.externalLink && (
-          <div className="btn-container">
-            <a
-              href={project.externalLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-btn"
-            >
-              Visit Live Website
-            </a>
-          </div>
-        )}
+        <h2>Project Details</h2>
+        <ul>
+          <li>
+            <strong>Challenge:</strong> {project.challenge}
+          </li>
+          <li>
+            <strong>Solution:</strong> {project.solution}
+          </li>
+          <li>
+            <strong>Result:</strong> {project.result}
+          </li>
+          {project.externalLink && (
+            <li>
+              <strong>Live Website:</strong>{" "}
+              <a href={project.externalLink} target="_blank" rel="noopener noreferrer">
+                {project.externalLink.replace(/^https?:\/\//, "")}
+              </a>
+            </li>
+          )}
+        </ul>
 
         <h2>Want Results Like This?</h2>
         <p>
