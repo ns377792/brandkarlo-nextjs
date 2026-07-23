@@ -1,4 +1,6 @@
+import Link from "next/link";
 import BlogFilterPagination from "@/components/BlogFilterPagination";
+import { getAllPosts } from "@/lib/blogData";
 
 export const metadata = {
   title: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo",
@@ -7,6 +9,8 @@ export const metadata = {
     canonical: "/blog",
   },
 };
+
+const allPosts = getAllPosts();
 
 export default function Page() {
   return (
@@ -95,162 +99,25 @@ export default function Page() {
                     </button>
                 </div>
 
-                {/* Blog Grid */}
+                {/* Blog Grid — generated from lib/blogData.js so titles/dates/links always stay in sync */}
                 <div className="blog-grid">
-
-                    {/* Post 1 */}
-                    <article className="blog-card" data-category="seo">
-                        <div className="blog-card-banner banner-seo">
-                            <span className="blog-card-badge badge-seo">SEO</span>
-                            <img src="/img/blog/blog-1.jpg" alt="10 Powerful SEO Strategies to Rank Higher in 2025" width="900" height="600" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> June 10, 2025</span>
-                                <span><i className="bi bi-clock"></i> 6 min read</span>
+                    {allPosts.map((post) => (
+                        <article className="blog-card" data-category={post.category} key={post.slug}>
+                            <div className={`blog-card-banner ${post.bannerClass}`}>
+                                <span className={`blog-card-badge ${post.badgeClass}`}>{post.badgeLabel}</span>
+                                <img src={post.image} alt={post.imageAlt} width="900" height="600" loading="lazy" decoding="async" />
                             </div>
-                            <h2 className="blog-card-title">10 Powerful SEO Strategies to Rank Higher in 2025</h2>
-                            <p className="blog-card-desc">Discover the most effective SEO strategies that actually work in 2025 and help you rank higher on Google.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 2 */}
-                    <article className="blog-card" data-category="social">
-                        <div className="blog-card-banner banner-social">
-                            <span className="blog-card-badge badge-social">Social Media</span>
-                            <img src="/img/blog/blog-2.jpg" alt="Social Media Trends to Watch in 2025 for Businesses" width="900" height="900" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> June 8, 2025</span>
-                                <span><i className="bi bi-clock"></i> 5 min read</span>
+                            <div className="blog-card-body">
+                                <div className="blog-card-meta">
+                                    <span><i className="bi bi-calendar3"></i> {post.date}</span>
+                                    <span><i className="bi bi-clock"></i> {post.readTime}</span>
+                                </div>
+                                <h2 className="blog-card-title">{post.title}</h2>
+                                <p className="blog-card-desc">{post.excerpt}</p>
+                                <Link href={`/blog/${post.slug}`} className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></Link>
                             </div>
-                            <h2 className="blog-card-title">Social Media Trends to Watch in 2025 for Businesses</h2>
-                            <p className="blog-card-desc">Stay ahead of the curve with the latest social media trends that can help you boost engagement and grow your brand.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 3 */}
-                    <article className="blog-card" data-category="digital">
-                        <div className="blog-card-banner banner-digital">
-                            <span className="blog-card-badge badge-digital">Digital Marketing</span>
-                            <img src="/img/blog/blog-3.jpg" alt="How Data-Driven Marketing Can Transform Your Business" width="900" height="600" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> June 6, 2025</span>
-                                <span><i className="bi bi-clock"></i> 7 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">How Data-Driven Marketing Can Transform Your Business</h2>
-                            <p className="blog-card-desc">Learn how leveraging data and analytics can improve your marketing strategies and maximize your ROI.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 4 */}
-                    <article className="blog-card" data-category="seo">
-                        <div className="blog-card-banner banner-ecommerce">
-                            <span className="blog-card-badge badge-ecommerce">Ecommerce</span>
-                            <img src="/img/blog/blog-4.jpg" alt="Ecommerce SEO Best Practices to Increase Sales" width="900" height="900" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> June 3, 2025</span>
-                                <span><i className="bi bi-clock"></i> 6 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">Ecommerce SEO Best Practices to Increase Sales</h2>
-                            <p className="blog-card-desc">Optimize your ecommerce store with these proven SEO best practices and drive more organic traffic.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 5 */}
-                    <article className="blog-card" data-category="website">
-                        <div className="blog-card-banner banner-website">
-                            <span className="blog-card-badge badge-website">Website</span>
-                            <img src="/img/blog/blog-5.jpg" alt="7 Must-Have Features for a High-Converting Website" width="500" height="500" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> May 30, 2025</span>
-                                <span><i className="bi bi-clock"></i> 6 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">7 Must-Have Features for a High-Converting Website</h2>
-                            <p className="blog-card-desc">These essential features can turn your website into a powerful conversion machine and grow your business.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 6 */}
-                    <article className="blog-card" data-category="ppc">
-                        <div className="blog-card-banner banner-ppc">
-                            <span className="blog-card-badge badge-ppc">PPC</span>
-                            <img src="/img/blog/blog-1.jpg" alt="PPC Advertising Tips to Get More Leads for Less Cost" width="900" height="600" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> May 27, 2025</span>
-                                <span><i className="bi bi-clock"></i> 5 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">PPC Advertising Tips to Get More Leads for Less Cost</h2>
-                            <p className="blog-card-desc">Reduce your ad spend and get more quality leads with these high-performing PPC advertising tips.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 7 */}
-                    <article className="blog-card" data-category="branding">
-                        <div className="blog-card-banner banner-branding">
-                            <span className="blog-card-badge badge-branding">Branding</span>
-                            <img src="/img/blog/blog-2.jpg" alt="How Strong Branding Builds Trust and Drives Sales" width="900" height="900" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> May 24, 2025</span>
-                                <span><i className="bi bi-clock"></i> 5 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">How Strong Branding Builds Trust and Drives Sales</h2>
-                            <p className="blog-card-desc">A strong brand is more than a logo. Here's how effective branding builds trust and increases customer loyalty.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 8 */}
-                    <article className="blog-card" data-category="digital">
-                        <div className="blog-card-banner banner-content">
-                            <span className="blog-card-badge badge-content">Content Marketing</span>
-                            <img src="/img/blog/blog-3.jpg" alt="Content Marketing Strategies That Actually Work in 2025" width="900" height="600" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> May 21, 2025</span>
-                                <span><i className="bi bi-clock"></i> 6 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">Content Marketing Strategies That Actually Work in 2025</h2>
-                            <p className="blog-card-desc">Create content that ranks, engages, and converts with these proven content marketing strategies.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
-                    {/* Post 9 */}
-                    <article className="blog-card" data-category="digital">
-                        <div className="blog-card-banner banner-email">
-                            <span className="blog-card-badge badge-email">Email Marketing</span>
-                            <img src="/img/blog/blog-4.jpg" alt="Email Marketing Best Practices to Boost Open Rates" width="900" height="900" loading="lazy" decoding="async" />
-                        </div>
-                        <div className="blog-card-body">
-                            <div className="blog-card-meta">
-                                <span><i className="bi bi-calendar3"></i> May 18, 2025</span>
-                                <span><i className="bi bi-clock"></i> 5 min read</span>
-                            </div>
-                            <h2 className="blog-card-title">Email Marketing Best Practices to Boost Open Rates</h2>
-                            <p className="blog-card-desc">Improve your email open rates and conversions with these proven email marketing best practices.</p>
-                            <a href="/get-free-consultation" className="blog-read-more">Read More <i className="bi bi-arrow-right"></i></a>
-                        </div>
-                    </article>
-
+                        </article>
+                    ))}
                 </div>
 
                 {/* No posts message (shown when a filter has zero posts) */}

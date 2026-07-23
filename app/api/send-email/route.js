@@ -37,6 +37,36 @@ Business Details: ${business_details || "-"}`,
     };
   }
 
+  if (formType === "comment") {
+    const {
+      name = "",
+      email = "",
+      comment = "",
+      postTitle = "",
+      postSlug = "",
+    } = data;
+
+    return {
+      subject: `New Blog Comment on: ${postTitle || "Untitled post"}`,
+      text: `New blog comment submitted:
+
+Post: ${postTitle}
+URL: /blog/${postSlug}
+Name: ${name}
+Email: ${email}
+Comment: ${comment}`,
+      html: `
+        <h2>New Blog Comment</h2>
+        <p><strong>Post:</strong> ${postTitle}</p>
+        <p><strong>URL:</strong> /blog/${postSlug}</p>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Comment:</strong><br/>${(comment || "-").replace(/\n/g, "<br/>")}</p>
+      `,
+      replyTo: email,
+    };
+  }
+
   const { name = "", email = "", subject = "", message = "" } = data;
 
   return {
@@ -67,12 +97,16 @@ export async function POST(request) {
       return NextResponse.json({ ok: true });
     }
 
-    const formType = data.formType === "consultation" ? "consultation" : "contact";
+    const validTypes = ["contact", "consultation", "comment"];
+    const formType = validTypes.includes(data.formType) ? data.formType : "contact";
 
-    const requiredFields =
-      formType === "consultation"
-        ? ["full_name", "email", "phone", "service_interest"]
-        : ["name", "email", "subject", "message"];
+    const requiredFieldsMap = {
+      contact: ["name", "email", "subject", "message"],
+      consultation: ["full_name", "email", "phone", "service_interest"],
+      comment: ["name", "email", "comment", "postSlug"],
+    };
+
+    const requiredFields = requiredFieldsMap[formType];
 
     for (const field of requiredFields) {
       if (!data[field] || !String(data[field]).trim()) {

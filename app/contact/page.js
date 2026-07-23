@@ -11,26 +11,32 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <div className="navbar-offset-spacer"></div>
 
-      {/* Contact Start */}
-      <div className="container-fluid py-5">
-        <div className="container px-lg-5">
-          <div className="row justify-content-center">
-            <div className="col-lg-7">
-              <div className="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                <span className="section-kicker position-relative d-inline text-primary ps-4">Contact Us</span>
-                <h1 className="mt-2">Contact For Any Query</h1>
-              </div>
-              <div className="wow fadeInUp" data-wow-delay="0.3s">
-                <h2 className="text-center mb-4">Fill out the form below and we&apos;ll get back to you soon.</h2>
-                <ContactForm />
-              </div>
+        <div className="navbar-offset-spacer"></div>
+
+
+        {/* Contact Start */}
+        <div className="container-fluid py-5">
+            <div className="container px-lg-5">
+                <div className="row justify-content-center">
+                    <div className="col-lg-7">
+                        <div className="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                            <span className="section-kicker position-relative d-inline text-primary ps-4">Contact Us</span>
+                            <h1 className="mt-2">Contact For Any Query</h1>
+                        </div>
+                        <div className="wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 className="text-center mb-4">Fill out the form below and we'll get back to you soon.</h2>
+                            <ContactForm />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      {/* Contact End */}
+        {/* Contact End */}
+        
+
+      
+        
     </>
   );
 }

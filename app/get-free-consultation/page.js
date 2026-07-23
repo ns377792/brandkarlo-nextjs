@@ -1,4 +1,5 @@
 import ConsultationForm from "@/components/ConsultationForm";
+
 export const metadata = {
   title: "Get a Free Consultation | BrandKarlo Digital Marketing Agency",
   description: "Book a free consultation with BrandKarlo and discover the best SEO, Google Ads and digital marketing strategy tailored for your business.",
