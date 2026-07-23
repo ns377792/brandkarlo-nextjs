@@ -5,6 +5,7 @@ import "animate.css/animate.min.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://www.brandkarlo.in"),
@@ -60,6 +61,16 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
           rel="stylesheet"
         />
+        <Script id="google-tag-manager" strategy="afterInteractive">
+  {`
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MW8KGMDB');
+  `}
+</Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -93,6 +104,14 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <div className="container-fluid bg-white p-0" id="top">
+          <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-MW8KGMDB"
+      height="0"
+      width="0"
+      style={{ display: "none", visibility: "hidden" }}
+    />
+  </noscript>
           <SiteChrome />
           <div className="container-fluid position-relative p-0">
             <Header />
