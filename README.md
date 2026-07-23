@@ -148,4 +148,4 @@ Each entry looks like this:
 
 - Images use plain `<img>` tags (not `next/image`), matching the original site markup.
 - Bootstrap's JS bundle is loaded from a CDN for things like the FAQ accordion.
-- There is no database or CMS — all content lives directly in the `.js` files listed above. If you later want non-developers to edit content without touching code, the natural next step is to move `lib/servicesData.js` and `lib/projectsData.js` (and eventually blog posts) into a CMS or a JSON file fetched at build time.
+- There is no database or CMS — all content lives directly in the `.js` files listed above. If you later want non-developers to edit content without touching code, the natural next step is to move `lib/servicesData.js` and `lib/projectsData.js` (and eventually blog posts) into a CMS or a JSON file fetched at build time .
