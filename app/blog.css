@@ -452,6 +452,7 @@
 .blog-detail-back a:hover { text-decoration: underline; }
 
 .blog-detail-badge {
+    position: static;
     display: inline-block;
     margin-bottom: 1rem;
 }
