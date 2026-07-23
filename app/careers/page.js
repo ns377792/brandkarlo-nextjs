@@ -28,7 +28,7 @@ export default function Page() {
             <div className="container px-lg-5">
                 <div className="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                     <span className="section-kicker position-relative d-inline text-primary ps-4">Careers</span>
-                    <h1 className="mt-2">Grow Your Career With BrandKarlo</h1>
+                    <h1 className="mt-2">Grow with NITIN Your Career With BrandKarlo</h1>
                 </div>
 
                 <div className="row justify-content-center">
