@@ -1,14 +1,69 @@
 export const metadata = {
-  title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
+  title: { absolute: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency" },
   description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
   alternates: {
-    canonical: "/faq",
+    canonical: "https://www.brandkarlo.in/faq",
+  },
+  openGraph: {
+    type: "website",
+    title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
+    description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
+    url: "https://www.brandkarlo.in/faq",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
+    description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
   },
 };
+const faqs = [
+  {
+    question: "What services does BrandKarlo offer?",
+    answer:
+      "We offer Search Engine Optimization (SEO), Website Design & Development, Social Media Marketing, Google Ads (PPC), Branding & Graphic Design, and AI Marketing Automation. See our full services page for details.",
+  },
+  {
+    question: "How long does it take to see SEO results?",
+    answer:
+      "Most clients start seeing meaningful improvements in 3 to 6 months, depending on competition and starting point. One of our recent campaigns increased organic traffic by 240% within 6 months.",
+  },
+  {
+    question: "Do you work with businesses outside India?",
+    answer:
+      "Yes. While our team is based in New Delhi, India, we work with clients remotely across different time zones and regularly collaborate over calls and email.",
+  },
+  {
+    question: "How much do your services cost?",
+    answer:
+      "Pricing depends on the scope of work, your goals, and the mix of services you need. Book a free consultation and we'll put together a plan and quote tailored to your business.",
+  },
+  {
+    question: "How do I get started with BrandKarlo?",
+    answer:
+      "Simply request a free consultation or contact us with a few details about your business, and our team will get back to you to discuss the best strategy for your goals.",
+  },
+];
 
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
+          }),
+        }}
+      />
 
         <div className="navbar-offset-spacer"></div>
 

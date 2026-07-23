@@ -1,0 +1,54 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a shopping bag with a discount tag representing ecommerce SEO">
+  <defs>
+    <linearGradient id="bg-ecommerce" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+    <radialGradient id="blob1-ecommerce" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2-ecommerce" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-ecommerce" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+    <radialGradient id="dotmask-ecommerce" cx="18%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotmaskm-ecommerce">
+      <rect width="900" height="600" fill="url(#dotmask-ecommerce)"/>
+    </mask>
+    <filter id="blur-ecommerce" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg-ecommerce)"/>
+  <rect width="900" height="600" fill="url(#dots-ecommerce)" mask="url(#dotmaskm-ecommerce)"/>
+
+  <circle cx="120" cy="90" r="170" fill="url(#blob1-ecommerce)" filter="url(#blur-ecommerce)"/>
+  <circle cx="800" cy="520" r="200" fill="url(#blob2-ecommerce)" filter="url(#blur-ecommerce)"/>
+
+  <!-- glass card -->
+  <rect x="330" y="150" width="300" height="300" rx="36" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <g transform="translate(400 220) scale(0.8)">
+    
+    <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 50 h120 l-10 100 a12 12 0 0 1 -12 10 h-76 a12 12 0 0 1 -12 -10 z" fill="#ffffff" fill-opacity="0.85" stroke="none"/>
+      <path d="M45 55 v-10 a35 35 0 0 1 70 0 v10" stroke="#ffffff" fill="none"/>
+      <circle cx="80" cy="100" r="8" fill="#7C3AED" stroke="none"/>
+      <g transform="translate(120 120)">
+        <circle cx="30" cy="20" r="30" fill="#F97316" stroke="none"/>
+        <text x="30" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">%</text>
+      </g>
+    </g>
+
+  </g>
+
+  
+</svg>

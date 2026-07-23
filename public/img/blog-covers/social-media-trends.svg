@@ -1,0 +1,56 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a profile avatar surrounded by a chat bubble and a heart icon representing social media engagement">
+  <defs>
+    <linearGradient id="bg-social" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <radialGradient id="blob1-social" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EDE9FE" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#EDE9FE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2-social" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-social" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+    <radialGradient id="dotmask-social" cx="18%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotmaskm-social">
+      <rect width="900" height="600" fill="url(#dotmask-social)"/>
+    </mask>
+    <filter id="blur-social" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg-social)"/>
+  <rect width="900" height="600" fill="url(#dots-social)" mask="url(#dotmaskm-social)"/>
+
+  <circle cx="120" cy="90" r="170" fill="url(#blob1-social)" filter="url(#blur-social)"/>
+  <circle cx="800" cy="520" r="200" fill="url(#blob2-social)" filter="url(#blur-social)"/>
+
+  <!-- glass card -->
+  <rect x="330" y="150" width="300" height="300" rx="36" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <g transform="translate(400 220) scale(0.8)">
+    
+    <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="80" cy="70" r="46" fill="#ffffff" fill-opacity="0.85" stroke="none"/>
+      <circle cx="80" cy="55" r="16" fill="#818CF8" stroke="none"/>
+      <path d="M50 95 a30 24 0 0 1 60 0" fill="#818CF8" stroke="none"/>
+      <g transform="translate(140 -10)">
+        <path d="M0 20 q0 -20 20 -20 h40 q20 0 20 20 v18 q0 20 -20 20 h-24 l-16 16 v-16 h0 q-20 0 -20 -20 z" fill="#ffffff" fill-opacity="0.9" stroke="none"/>
+      </g>
+      <g transform="translate(10 150)">
+        <path d="M20 36 C4 26 4 4 20 2 C30 0 38 8 40 16 C42 8 50 0 60 2 C76 4 76 26 60 36 L40 50 Z" fill="#F472B6" stroke="none"/>
+      </g>
+    </g>
+
+  </g>
+
+  
+</svg>

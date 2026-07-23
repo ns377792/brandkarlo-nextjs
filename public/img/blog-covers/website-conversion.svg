@@ -1,0 +1,58 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a browser window with a call-to-action button representing high-converting website design">
+  <defs>
+    <linearGradient id="bg-website" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C7D2FE"/>
+      <stop offset="100%" stop-color="#A5B4FC"/>
+    </linearGradient>
+    <radialGradient id="blob1-website" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2-website" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#4F46E5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-website" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+    <radialGradient id="dotmask-website" cx="18%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotmaskm-website">
+      <rect width="900" height="600" fill="url(#dotmask-website)"/>
+    </mask>
+    <filter id="blur-website" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg-website)"/>
+  <rect width="900" height="600" fill="url(#dots-website)" mask="url(#dotmaskm-website)"/>
+
+  <circle cx="120" cy="90" r="170" fill="url(#blob1-website)" filter="url(#blur-website)"/>
+  <circle cx="800" cy="520" r="200" fill="url(#blob2-website)" filter="url(#blur-website)"/>
+
+  <!-- glass card -->
+  <rect x="330" y="150" width="300" height="300" rx="36" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <g transform="translate(400 220) scale(0.8)">
+    
+    <g fill="none" stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="0" width="180" height="130" rx="14" fill="#ffffff" fill-opacity="0.95" stroke="none"/>
+      <rect x="0" y="0" width="180" height="30" rx="14" fill="#E0E7FF" stroke="none"/>
+      <circle cx="16" cy="15" r="4" fill="#F97316" stroke="none"/>
+      <circle cx="30" cy="15" r="4" fill="#FBBF24" stroke="none"/>
+      <circle cx="44" cy="15" r="4" fill="#34D399" stroke="none"/>
+      <rect x="16" y="46" width="90" height="10" rx="5" fill="#CBD5E1" stroke="none"/>
+      <rect x="16" y="64" width="60" height="10" rx="5" fill="#E2E8F0" stroke="none"/>
+      <rect x="16" y="92" width="70" height="24" rx="12" fill="#4F46E5" stroke="none"/>
+      <g transform="translate(96 100)">
+        <path d="M0 0 L18 6 L9 10 L6 19 Z" fill="#111827" stroke="#ffffff" stroke-width="2"/>
+      </g>
+    </g>
+
+  </g>
+
+  
+</svg>

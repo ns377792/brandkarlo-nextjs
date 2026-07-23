@@ -1,13 +1,22 @@
 import ConsultationForm from "@/components/ConsultationForm";
-
 export const metadata = {
-  title: "Get a Free Consultation | BrandKarlo Digital Marketing Agency",
+  title: { absolute: "Get a Free Consultation | BrandKarlo Digital Marketing Agency" },
   description: "Book a free consultation with BrandKarlo and discover the best SEO, Google Ads and digital marketing strategy tailored for your business.",
   alternates: {
-    canonical: "/get-free-consultation",
+    canonical: "https://www.brandkarlo.in/get-free-consultation",
+  },
+  openGraph: {
+    type: "website",
+    title: "Get a Free Consultation | BrandKarlo Digital Marketing Agency",
+    description: "Book a free consultation with BrandKarlo and discover the best SEO, Google Ads and digital marketing strategy tailored for your business.",
+    url: "https://www.brandkarlo.in/get-free-consultation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Get a Free Consultation | BrandKarlo Digital Marketing Agency",
+    description: "Book a free consultation with BrandKarlo and discover the best SEO, Google Ads and digital marketing strategy tailored for your business.",
   },
 };
-
 export default function Page() {
   return (
     <>

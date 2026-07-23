@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
 
 export const metadata = {
-  metadataBase: new URL("https://brandkarlo.in"),
+  metadataBase: new URL("https://www.brandkarlo.in"),
   title: {
     default: "BrandKarlo | Digital Marketing Agency in India – SEO, Ads & Web Design",
     template: "%s | BrandKarlo",
@@ -19,12 +19,12 @@ export const metadata = {
   authors: [{ name: "BrandKarlo" }],
   icons: { icon: "/favicon.ico" },
   alternates: {
-    canonical: "/",
+    canonical: "https://www.brandkarlo.in/",
   },
   openGraph: {
     type: "website",
     siteName: "BrandKarlo",
-    url: "https://brandkarlo.in/",
+    url: "https://www.brandkarlo.in/",
     images: ["/img/hero.png"],
   },
   twitter: {
@@ -67,8 +67,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "MarketingAgency",
               name: "BrandKarlo",
-              url: "https://brandkarlo.in/",
-              image: "https://brandkarlo.in/img/hero.png",
+              url: "https://www.brandkarlo.in/",
+              image: "https://www.brandkarlo.in/img/hero.png",
               description:
                 "BrandKarlo is India's trusted digital marketing agency helping startups, local businesses and growing brands achieve measurable growth through SEO, Google Ads, social media marketing and website development.",
               address: {

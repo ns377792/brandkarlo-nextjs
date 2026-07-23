@@ -1,11 +1,21 @@
 export const metadata = {
-  title: "Privacy Policy | BrandKarlo Digital Marketing Agency",
+  title: { absolute: "Privacy Policy | BrandKarlo Digital Marketing Agency" },
   description: "Read BrandKarlo's privacy policy to understand how we collect, use, and protect your personal information.",
   alternates: {
-    canonical: "/privacy-policy",
+    canonical: "https://www.brandkarlo.in/privacy-policy",
+  },
+  openGraph: {
+    type: "website",
+    title: "Privacy Policy | BrandKarlo Digital Marketing Agency",
+    description: "Read BrandKarlo's privacy policy to understand how we collect, use, and protect your personal information.",
+    url: "https://www.brandkarlo.in/privacy-policy",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | BrandKarlo Digital Marketing Agency",
+    description: "Read BrandKarlo's privacy policy to understand how we collect, use, and protect your personal information.",
   },
 };
-
 export default function Page() {
   return (
     <>

@@ -1,15 +1,24 @@
 import Link from "next/link";
 import { servicesData } from "@/lib/servicesData";
-
 export const metadata = {
-  title: "Our Services | SEO, Ads, Website Development & More – BrandKarlo",
+  title: { absolute: "Our Services | SEO, Ads, Website Development & More – BrandKarlo" },
   description:
     "Explore BrandKarlo's digital marketing services: SEO, Social Media Marketing, Content Marketing, Email Marketing, Google & Meta Ads, Website Development and more.",
   alternates: {
-    canonical: "/service",
+    canonical: "https://www.brandkarlo.in/service",
+  },
+  openGraph: {
+    type: "website",
+    title: "Our Services | SEO, Ads, Website Development & More – BrandKarlo",
+    description: "Explore BrandKarlo's digital marketing services: SEO, Social Media Marketing, Content Marketing, Email Marketing, Google & Meta Ads, Website Development and more.",
+    url: "https://www.brandkarlo.in/service",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services | SEO, Ads, Website Development & More – BrandKarlo",
+    description: "Explore BrandKarlo's digital marketing services: SEO, Social Media Marketing, Content Marketing, Email Marketing, Google & Meta Ads, Website Development and more.",
   },
 };
-
 export default function Page() {
   return (
     <>

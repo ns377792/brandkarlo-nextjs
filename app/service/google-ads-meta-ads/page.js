@@ -1,16 +1,24 @@
 import { getServiceBySlug } from "@/lib/servicesData";
 import ServiceDetail from "@/components/ServiceDetail";
-
 const service = getServiceBySlug("google-ads-meta-ads");
-
 export const metadata = {
-  title: service.metaTitle,
+  title: { absolute: service.metaTitle },
   description: service.metaDescription,
   alternates: {
-    canonical: "/service/google-ads-meta-ads",
+    canonical: "https://www.brandkarlo.in/service/google-ads-meta-ads",
+  },
+  openGraph: {
+    type: "website",
+    title: service.metaTitle,
+    description: service.metaDescription,
+    url: "https://www.brandkarlo.in/service/google-ads-meta-ads",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: service.metaTitle,
+    description: service.metaDescription,
   },
 };
-
 export default function Page() {
   return <ServiceDetail service={service} />;
 }

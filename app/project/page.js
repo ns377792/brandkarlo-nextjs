@@ -1,16 +1,25 @@
 import Link from "next/link";
 import FilterGrid from "@/components/FilterGrid";
 import { projectsData } from "@/lib/projectsData";
-
 export const metadata = {
-  title: "Our Projects | Digital Marketing Portfolio – BrandKarlo",
+  title: { absolute: "Our Projects | Digital Marketing Portfolio – BrandKarlo" },
   description:
     "Browse BrandKarlo's recent client projects across web design, SEO, Google Ads, branding and social media marketing.",
   alternates: {
-    canonical: "/project",
+    canonical: "https://www.brandkarlo.in/project",
+  },
+  openGraph: {
+    type: "website",
+    title: "Our Projects | Digital Marketing Portfolio – BrandKarlo",
+    description: "Browse BrandKarlo's recent client projects across web design, SEO, Google Ads, branding and social media marketing.",
+    url: "https://www.brandkarlo.in/project",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Projects | Digital Marketing Portfolio – BrandKarlo",
+    description: "Browse BrandKarlo's recent client projects across web design, SEO, Google Ads, branding and social media marketing.",
   },
 };
-
 const filters = [
   { key: "all", label: "All Projects", icon: "/img/filter-all.svg" },
   { key: "website", label: "Website Development", icon: "/img/filter-website.svg" },
@@ -19,7 +28,6 @@ const filters = [
   { key: "branding", label: "Branding", icon: "/img/filter-branding.svg" },
   { key: "social", label: "Social Media", icon: "/img/filter-social.svg" },
 ];
-
 export default function Page() {
   return (
     <>

@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://brandkarlo.in/sitemap.xml
+Sitemap: https://www.brandkarlo.in/sitemap.xml
 
 # AI/LLM discovery file
-# https://brandkarlo.in/llms.txt
+# https://www.brandkarlo.in/llms.txt

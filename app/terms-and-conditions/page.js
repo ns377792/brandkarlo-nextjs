@@ -1,11 +1,21 @@
 export const metadata = {
-  title: "Terms & Conditions | BrandKarlo Digital Marketing Agency",
+  title: { absolute: "Terms & Conditions | BrandKarlo Digital Marketing Agency" },
   description: "Read the terms and conditions for using BrandKarlo's website and digital marketing services.",
   alternates: {
-    canonical: "/terms-and-conditions",
+    canonical: "https://www.brandkarlo.in/terms-and-conditions",
+  },
+  openGraph: {
+    type: "website",
+    title: "Terms & Conditions | BrandKarlo Digital Marketing Agency",
+    description: "Read the terms and conditions for using BrandKarlo's website and digital marketing services.",
+    url: "https://www.brandkarlo.in/terms-and-conditions",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions | BrandKarlo Digital Marketing Agency",
+    description: "Read the terms and conditions for using BrandKarlo's website and digital marketing services.",
   },
 };
-
 export default function Page() {
   return (
     <>

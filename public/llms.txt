@@ -1,0 +1,58 @@
+# BrandKarlo
+
+> BrandKarlo is India's trusted digital marketing agency helping startups, local businesses, and growing brands build a powerful online presence through strategic, data-driven digital marketing — SEO, paid ads, social media, content, email, and website development.
+
+BrandKarlo is based in New Delhi, India, and works with businesses of all sizes on organic growth (SEO, content, social media), paid acquisition (Google Ads, Meta Ads, Shopping Ads, Display Ads), conversion-focused website design and development, and marketing analytics. The site below is organized by company info, services, case studies, and blog content.
+
+## Company
+
+- [Homepage](https://www.brandkarlo.in/): Overview of BrandKarlo's services, approach, and results.
+- [About](https://www.brandkarlo.in/about): BrandKarlo's story and how it helps startups and growing brands build an online presence.
+- [Contact](https://www.brandkarlo.in/contact): Contact form and details to reach the BrandKarlo team.
+- [Get a Free Consultation](https://www.brandkarlo.in/get-free-consultation): Free consultation request form for new project inquiries.
+- [FAQ](https://www.brandkarlo.in/faq): Answers to common questions about SEO, website development, social media, Google Ads, and branding services.
+- [Careers](https://www.brandkarlo.in/careers): Career opportunities at BrandKarlo.
+
+## Services
+
+- [All Services](https://www.brandkarlo.in/service): Overview of every service BrandKarlo offers.
+- [SEO](https://www.brandkarlo.in/service/seo): Rank higher, get found, and grow organic traffic.
+- [Social Media Marketing](https://www.brandkarlo.in/service/social-media-marketing): Build a brand people actually follow.
+- [Content Marketing](https://www.brandkarlo.in/service/content-marketing): Content that educates, engages, and converts.
+- [Email Marketing](https://www.brandkarlo.in/service/email-marketing): Turn subscribers into repeat customers.
+- [Google Ads & Meta Ads](https://www.brandkarlo.in/service/google-ads-meta-ads): Qualified leads, fast, on Google, Facebook, and Instagram.
+- [Website Development](https://www.brandkarlo.in/service/website-development): Fast, responsive websites built to convert.
+- [Website Optimization](https://www.brandkarlo.in/service/website-optimization): Faster load times and higher conversions.
+- [Google Analytics](https://www.brandkarlo.in/service/google-analytics): Know exactly where traffic and leads come from.
+- [Google Business Profile](https://www.brandkarlo.in/service/google-business-profile): Get found by customers searching nearby.
+- [Funnel Marketing](https://www.brandkarlo.in/service/funnel-marketing): Guide visitors from first click to loyal customer.
+- [Shopping Ads](https://www.brandkarlo.in/service/shopping-ads): Put products in front of ready-to-buy shoppers.
+- [Display Ads](https://www.brandkarlo.in/service/display-ads): Stay visible across the web with visual ads.
+
+## Case Studies
+
+- [All Projects](https://www.brandkarlo.in/project): Portfolio of client work across SEO, ads, social media, branding, and web development.
+- [Iamnitinsingh.in Portfolio Website](https://www.brandkarlo.in/project/iamnitinsingh-portfolio): A fast, SEO-optimized personal portfolio website for a full-stack developer.
+- [Activechamp.in Shopify Store](https://www.brandkarlo.in/project/activechamp-shopify): A high-converting Shopify store for an educational toy eCommerce brand.
+- [Business Growth SEO Campaign](https://www.brandkarlo.in/project/business-growth-seo): An SEO campaign that grew organic traffic by 240% for a local business.
+- [Lead Generation Google Ads Campaign](https://www.brandkarlo.in/project/lead-generation-ads): A Google Ads campaign that lowered cost-per-lead and drove qualified inquiries.
+- [Kitabiduniya.com Brand Identity](https://www.brandkarlo.in/project/kitabiduniya-branding): A complete brand identity and packaging system for an organic skincare label.
+- [Engaging Social Media Campaigns](https://www.brandkarlo.in/project/engaging-social-campaigns): A social media strategy that boosted engagement and follower growth across platforms.
+
+## Blog
+
+- [Blog](https://www.brandkarlo.in/blog): Articles on SEO, social media, content marketing, PPC, branding, and website conversion.
+- [10 Powerful SEO Strategies to Rank Higher in 2026](https://www.brandkarlo.in/blog/10-powerful-seo-strategies-to-rank-higher-in-2026): The most effective SEO strategies that actually work in 2026.
+- [Social Media Trends to Watch in 2026 for Businesses](https://www.brandkarlo.in/blog/social-media-trends-to-watch-in-2026-for-businesses): Trends shaping social media engagement and growth for businesses.
+- [How Data-Driven Marketing Can Transform Your Business](https://www.brandkarlo.in/blog/how-data-driven-marketing-can-transform-your-business): How data and analytics improve marketing strategy and ROI.
+- [Ecommerce SEO Best Practices to Increase Sales](https://www.brandkarlo.in/blog/ecommerce-seo-best-practices-to-increase-sales): SEO best practices for online stores to drive organic traffic and sales.
+- [7 Must-Have Features for a High-Converting Website](https://www.brandkarlo.in/blog/7-must-have-features-for-a-high-converting-website): Essential features that turn a website into a conversion machine.
+- [PPC Advertising Tips to Get More Leads for Less Cost](https://www.brandkarlo.in/blog/ppc-advertising-tips-to-get-more-leads-for-less-cost): How to lower cost per lead and improve PPC campaign performance.
+- [How Strong Branding Builds Trust and Drives Sales](https://www.brandkarlo.in/blog/how-strong-branding-builds-trust-and-drives-sales): Why branding is more than a logo, and how it builds trust and loyalty.
+- [Content Marketing Strategies That Actually Work in 2026](https://www.brandkarlo.in/blog/content-marketing-strategies-that-actually-work-in-2026): Content strategies that rank, engage, and convert.
+- [Email Marketing Best Practices to Boost Open Rates](https://www.brandkarlo.in/blog/email-marketing-best-practices-to-boost-open-rates): Best practices to improve email open rates and conversions.
+
+## Other
+
+- [Privacy Policy](https://www.brandkarlo.in/privacy-policy): How BrandKarlo handles user data and privacy.
+- [Terms and Conditions](https://www.brandkarlo.in/terms-and-conditions): Terms of use for the BrandKarlo website and services.

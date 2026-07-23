@@ -1,8 +1,61 @@
 import Link from "next/link";
 
 export default function ServiceDetail({ service }) {
+  const serviceUrl = `https://www.brandkarlo.in/service/${service.slug}`;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: service.title,
+            name: service.fullTitle,
+            description: service.metaDescription,
+            provider: {
+              "@type": "Organization",
+              name: "BrandKarlo",
+              url: "https://www.brandkarlo.in/",
+            },
+            areaServed: {
+              "@type": "Country",
+              name: "India",
+            },
+            url: serviceUrl,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.brandkarlo.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Services",
+                item: "https://www.brandkarlo.in/service",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: service.title,
+                item: serviceUrl,
+              },
+            ],
+          }),
+        }}
+      />
       <div className="navbar-offset-spacer"></div>
 
       <div className="ns-about-container ns-service-container">

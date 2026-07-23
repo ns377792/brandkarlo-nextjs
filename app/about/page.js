@@ -1,11 +1,21 @@
 export const metadata = {
-  title: "About BrandKarlo | Our Digital Marketing Agency Story",
+  title: { absolute: "About BrandKarlo | Our Digital Marketing Agency Story" },
   description: "Learn how BrandKarlo helps startups, local businesses and growing brands build a powerful online presence through strategic, data-driven digital marketing.",
   alternates: {
-    canonical: "/about",
+    canonical: "https://www.brandkarlo.in/about",
+  },
+  openGraph: {
+    type: "website",
+    title: "About BrandKarlo | Our Digital Marketing Agency Story",
+    description: "Learn how BrandKarlo helps startups, local businesses and growing brands build a powerful online presence through strategic, data-driven digital marketing.",
+    url: "https://www.brandkarlo.in/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About BrandKarlo | Our Digital Marketing Agency Story",
+    description: "Learn how BrandKarlo helps startups, local businesses and growing brands build a powerful online presence through strategic, data-driven digital marketing.",
   },
 };
-
 export default function Page() {
   return (
     <>

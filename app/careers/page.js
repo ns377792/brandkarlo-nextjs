@@ -1,11 +1,21 @@
 export const metadata = {
-  title: "Careers at BrandKarlo | Join Our Digital Marketing Team",
+  title: { absolute: "Careers at BrandKarlo | Join Our Digital Marketing Team" },
   description: "Explore career opportunities at BrandKarlo and join a growing digital marketing agency helping brands succeed online.",
   alternates: {
-    canonical: "/careers",
+    canonical: "https://www.brandkarlo.in/careers",
+  },
+  openGraph: {
+    type: "website",
+    title: "Careers at BrandKarlo | Join Our Digital Marketing Team",
+    description: "Explore career opportunities at BrandKarlo and join a growing digital marketing agency helping brands succeed online.",
+    url: "https://www.brandkarlo.in/careers",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers at BrandKarlo | Join Our Digital Marketing Team",
+    description: "Explore career opportunities at BrandKarlo and join a growing digital marketing agency helping brands succeed online.",
   },
 };
-
 export default function Page() {
   return (
     <>

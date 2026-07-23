@@ -1,17 +1,25 @@
 import Link from "next/link";
 import BlogFilterPagination from "@/components/BlogFilterPagination";
 import { getAllPosts } from "@/lib/blogData";
-
 export const metadata = {
-  title: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo",
+  title: { absolute: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo" },
   description: "Stay updated with the latest digital marketing trends, proven strategies, and expert insights from BrandKarlo to grow your business online.",
   alternates: {
-    canonical: "/blog",
+    canonical: "https://www.brandkarlo.in/blog",
+  },
+  openGraph: {
+    type: "website",
+    title: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo",
+    description: "Stay updated with the latest digital marketing trends, proven strategies, and expert insights from BrandKarlo to grow your business online.",
+    url: "https://www.brandkarlo.in/blog",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Latest Digital Marketing Insights & Trends – BrandKarlo",
+    description: "Stay updated with the latest digital marketing trends, proven strategies, and expert insights from BrandKarlo to grow your business online.",
   },
 };
-
 const allPosts = getAllPosts();
-
 export default function Page() {
   return (
     <>

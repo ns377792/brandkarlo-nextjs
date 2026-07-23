@@ -28,9 +28,75 @@ function ContentBlock({ block, index }) {
 
 export default function BlogDetail({ post }) {
   const relatedPosts = getRelatedPosts(post.slug, 3);
+  const postUrl = `https://www.brandkarlo.in/blog/${post.slug}`;
+  let isoDate;
+  try {
+    isoDate = new Date(post.date).toISOString();
+  } catch {
+    isoDate = undefined;
+  }
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            headline: post.title,
+            description: post.excerpt,
+            image: `https://www.brandkarlo.in${post.image}`,
+            datePublished: isoDate,
+            dateModified: isoDate,
+            author: {
+              "@type": "Organization",
+              name: "BrandKarlo",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "BrandKarlo",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://www.brandkarlo.in/img/hero.png",
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": postUrl,
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.brandkarlo.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Blog",
+                item: "https://www.brandkarlo.in/blog",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: post.title,
+                item: postUrl,
+              },
+            ],
+          }),
+        }}
+      />
       <div className="navbar-offset-spacer"></div>
 
       {/* Blog Detail Hero */}

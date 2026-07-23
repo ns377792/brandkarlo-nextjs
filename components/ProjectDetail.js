@@ -1,8 +1,39 @@
 import Link from "next/link";
 
 export default function ProjectDetail({ project }) {
+  const projectUrl = `https://www.brandkarlo.in/project/${project.slug}`;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.brandkarlo.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Projects",
+                item: "https://www.brandkarlo.in/project",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: project.title,
+                item: projectUrl,
+              },
+            ],
+          }),
+        }}
+      />
       <div className="navbar-offset-spacer"></div>
 
       <div className="ns-about-container ns-service-container">
