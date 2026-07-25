@@ -1,0 +1,55 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a map pin marked number one with an upward trend line, representing a local business ranking on Google's first page">
+  <defs>
+    <linearGradient id="bg-case-study" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <radialGradient id="blob1-case-study" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6EE7B7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2-case-study" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots-case-study" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#ffffff" fill-opacity="0.18"/>
+    </pattern>
+    <radialGradient id="dotmask-case-study" cx="18%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="dotmaskm-case-study">
+      <rect width="900" height="600" fill="url(#dotmask-case-study)"/>
+    </mask>
+    <filter id="blur-case-study" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="45"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg-case-study)"/>
+  <rect width="900" height="600" fill="url(#dots-case-study)" mask="url(#dotmaskm-case-study)"/>
+
+  <circle cx="120" cy="90" r="170" fill="url(#blob1-case-study)" filter="url(#blur-case-study)"/>
+  <circle cx="800" cy="520" r="200" fill="url(#blob2-case-study)" filter="url(#blur-case-study)"/>
+
+  <!-- glass card -->
+  <rect x="330" y="150" width="300" height="300" rx="36" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+
+  <g transform="translate(400 220) scale(0.8)">
+    
+    <g fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M70 10 C30 10 5 40 5 75 C5 120 70 170 70 170 C70 170 135 120 135 75 C135 40 110 10 70 10 Z" fill="#ffffff" fill-opacity="0.92" stroke="none"/>
+      <circle cx="70" cy="72" r="30" fill="#059669" stroke="none"/>
+      <text x="70" y="83" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
+      <g transform="translate(120 118)">
+        <circle cx="24" cy="24" r="24" fill="#FBBF24" stroke="none"/>
+        <path d="M12 26 l8 8 l16 -18" stroke="#78350F" stroke-width="5" fill="none"/>
+      </g>
+      <polyline points="-30,150 -6,130 18,142 46,108" stroke="#FBBF24" stroke-width="7"/>
+    </g>
+
+  </g>
+
+  
+</svg>

@@ -1,7 +1,11 @@
 import Link from "next/link";
+import { getServiceBySlug } from "@/lib/servicesData";
 
 export default function ProjectDetail({ project }) {
   const projectUrl = `https://www.brandkarlo.in/project/${project.slug}`;
+  const relatedService = project.relatedServiceSlug
+    ? getServiceBySlug(project.relatedServiceSlug)
+    : null;
 
   return (
     <>
@@ -72,6 +76,16 @@ export default function ProjectDetail({ project }) {
             </li>
           )}
         </ul>
+
+        {relatedService && (
+          <p>
+            This project was delivered through our{" "}
+            <Link href={`/service/${relatedService.slug}`}>
+              {relatedService.title} services
+            </Link>
+            .
+          </p>
+        )}
 
         <h2>Want Results Like This?</h2>
         <p>

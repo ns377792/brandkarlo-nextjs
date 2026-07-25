@@ -1,7 +1,15 @@
 import Link from "next/link";
+import { getPostBySlug } from "@/lib/blogData";
+import { getProjectBySlug } from "@/lib/projectsData";
 
 export default function ServiceDetail({ service }) {
   const serviceUrl = `https://www.brandkarlo.in/service/${service.slug}`;
+  const relatedPosts = (service.relatedBlogSlugs || [])
+    .map((slug) => getPostBySlug(slug))
+    .filter(Boolean);
+  const relatedProject = service.relatedProjectSlug
+    ? getProjectBySlug(service.relatedProjectSlug)
+    : null;
 
   return (
     <>
@@ -92,6 +100,26 @@ export default function ServiceDetail({ service }) {
             );
           })}
         </ul>
+
+        {(relatedPosts.length > 0 || relatedProject) && (
+          <>
+            <h2>Related Resources</h2>
+            <ul>
+              {relatedPosts.map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                </li>
+              ))}
+              {relatedProject && (
+                <li>
+                  <Link href={`/project/${relatedProject.slug}`}>
+                    Case Study: {relatedProject.title}
+                  </Link>
+                </li>
+              )}
+            </ul>
+          </>
+        )}
 
         <h2>Ready to Get Started?</h2>
         <p>

@@ -1,6 +1,41 @@
 import Link from "next/link";
 import { getRelatedPosts } from "@/lib/blogData";
+import { getServiceBySlug } from "@/lib/servicesData";
 import BlogCommentForm from "@/components/BlogCommentForm";
+
+// Parses lightweight markdown-style links [text](url) within paragraph text
+// so blog content can contain genuine, contextual internal links.
+function renderTextWithLinks(text) {
+  const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  let i = 0;
+
+  while ((match = linkRe.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [, label, href] = match;
+    const isInternal = href.startsWith("/");
+    parts.push(
+      isInternal ? (
+        <Link href={href} key={`link-${i++}`}>
+          {label}
+        </Link>
+      ) : (
+        <a href={href} key={`link-${i++}`} target="_blank" rel="noopener noreferrer">
+          {label}
+        </a>
+      )
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
 
 function ContentBlock({ block, index }) {
   if (block.type === "h2") {
@@ -21,13 +56,16 @@ function ContentBlock({ block, index }) {
   }
   return (
     <p className="blog-detail-p" key={index}>
-      {block.text}
+      {renderTextWithLinks(block.text)}
     </p>
   );
 }
 
 export default function BlogDetail({ post }) {
   const relatedPosts = getRelatedPosts(post.slug, 3);
+  const relatedService = post.relatedServiceSlug
+    ? getServiceBySlug(post.relatedServiceSlug)
+    : null;
   const postUrl = `https://www.brandkarlo.in/blog/${post.slug}`;
   let isoDate;
   try {
@@ -141,6 +179,20 @@ export default function BlogDetail({ post }) {
                 <ContentBlock block={block} index={i} key={i} />
               ))}
             </article>
+
+            {/* Related Service — internal link to the relevant service page */}
+            {relatedService && (
+              <div className="blog-detail-related-service">
+                <i className="bi bi-arrow-return-right"></i>
+                <p>
+                  This article is closely related to our{" "}
+                  <Link href={`/service/${relatedService.slug}`}>
+                    {relatedService.title} services
+                  </Link>
+                  . Explore how we approach it for clients.
+                </p>
+              </div>
+            )}
 
             {/* CTA */}
             <div className="blog-detail-cta">

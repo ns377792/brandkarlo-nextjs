@@ -311,6 +311,7 @@
 .banner-branding { background: linear-gradient(135deg, #FBBF24, #F59E0B); }
 .banner-content { background: linear-gradient(135deg, #0F172A, #1E293B); }
 .banner-email { background: linear-gradient(135deg, #312E81, #1E1B4B); }
+.banner-case-study { background: linear-gradient(135deg, #059669, #047857); }
 
 /* Badge colors per category */
 .badge-seo { background: #EDE9FE; color: #7C3AED; }
@@ -322,6 +323,7 @@
 .badge-branding { background: #FFE4E6; color: #E11D48; }
 .badge-content { background: #DBEAFE; color: #2563EB; }
 .badge-email { background: #D1FAE5; color: #059669; }
+.badge-case-study { background: #A7F3D0; color: #065F46; }
 
 /* ---------- Pagination ---------- */
 .blog-pagination {
@@ -452,7 +454,6 @@
 .blog-detail-back a:hover { text-decoration: underline; }
 
 .blog-detail-badge {
-    position: static;
     display: inline-block;
     margin-bottom: 1rem;
 }
@@ -522,6 +523,35 @@
 .blog-detail-list li {
     margin-bottom: .6rem;
     padding-left: .3rem;
+}
+
+.blog-detail-related-service {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid #4F46E5;
+    background: #F8F7FF;
+    border-radius: 0 12px 12px 0;
+    font-size: .95rem;
+    color: #333048;
+}
+
+.blog-detail-related-service i {
+    color: #4F46E5;
+    font-size: 1.1rem;
+    margin-top: .15rem;
+}
+
+.blog-detail-related-service p {
+    margin-bottom: 0;
+}
+
+.blog-detail-related-service a {
+    color: #4F46E5;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .blog-detail-cta {
