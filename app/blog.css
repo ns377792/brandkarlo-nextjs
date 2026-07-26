@@ -455,6 +455,9 @@
 
 .blog-detail-badge {
     display: inline-block;
+    position: static;
+    top: auto;
+    left: auto;
     margin-bottom: 1rem;
 }
 
