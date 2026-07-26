@@ -518,6 +518,45 @@
     margin: 2.2rem 0 1rem;
 }
 
+.blog-detail-h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #12121F;
+    margin: 1.6rem 0 .8rem;
+}
+
+.blog-detail-table-wrap {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    border: 1px solid #eef0f4;
+}
+
+.blog-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .92rem;
+}
+
+.blog-detail-table th {
+    background: #F5F3FF;
+    color: #4F46E5;
+    font-weight: 700;
+    text-align: left;
+    padding: .7rem 1rem;
+    white-space: nowrap;
+}
+
+.blog-detail-table td {
+    padding: .65rem 1rem;
+    border-top: 1px solid #eef0f4;
+    color: #333048;
+}
+
+.blog-detail-table tr:nth-child(even) td {
+    background: #FAFAFC;
+}
+
 .blog-detail-list {
     margin: 0 0 1.6rem;
     padding-left: 1.3rem;

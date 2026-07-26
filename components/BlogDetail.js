@@ -45,6 +45,13 @@ function ContentBlock({ block, index }) {
       </h2>
     );
   }
+  if (block.type === "h3") {
+    return (
+      <h3 className="blog-detail-h3" key={index}>
+        {block.text}
+      </h3>
+    );
+  }
   if (block.type === "ul") {
     return (
       <ul className="blog-detail-list" key={index}>
@@ -52,6 +59,30 @@ function ContentBlock({ block, index }) {
           <li key={i}>{item}</li>
         ))}
       </ul>
+    );
+  }
+  if (block.type === "table") {
+    return (
+      <div className="blog-detail-table-wrap" key={index}>
+        <table className="blog-detail-table">
+          <thead>
+            <tr>
+              {block.headers.map((h, i) => (
+                <th key={i}>{h}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {block.rows.map((row, r) => (
+              <tr key={r}>
+                {row.map((cell, c) => (
+                  <td key={c}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     );
   }
   return (
@@ -135,6 +166,25 @@ export default function BlogDetail({ post }) {
           }),
         }}
       />
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
       <div className="navbar-offset-spacer"></div>
 
       {/* Blog Detail Hero */}
