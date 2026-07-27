@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getServiceBySlug } from "@/lib/servicesData";
 
 export default function ProjectDetail({ project }) {
@@ -51,7 +52,15 @@ export default function ProjectDetail({ project }) {
         <div className="subtitle">{project.categoryLabel}</div>
 
         <div className="ns-project-image">
-          <img src={project.image} alt={project.imageAlt} />
+          <Image
+            src={project.image}
+            alt={project.imageAlt}
+            width={project.imageWidth}
+            height={project.imageHeight}
+            style={{ width: "100%", height: "auto" }}
+            sizes="(max-width: 800px) 100vw, 800px"
+            priority
+          />
         </div>
 
         <p>{project.shortDesc}</p>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import FilterGrid from "@/components/FilterGrid";
 import { projectsData } from "@/lib/projectsData";
 export const metadata = {
@@ -71,12 +72,12 @@ export default function Page() {
                   data-category={project.category}
                 >
                   <div className={`card-preview preview-${project.category} has-img`}>
-                    <img
+                    <Image
                       className="project-img"
                       src={project.image}
                       alt={project.imageAlt}
-                      loading="lazy"
-                      decoding="async"
+                      fill
+                      sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw"
                     />
                   </div>
                   <div className="card-body">

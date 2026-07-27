@@ -1,3 +1,4 @@
+import Image from "next/image";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import ContactForm from "@/components/ContactForm";
 export default function Page() {
@@ -161,7 +162,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <img className="img-fluid wow zoomIn" data-wow-delay="0.5s" src="/img/about.jpg" alt="BrandKarlo team working on a digital marketing strategy" width="600" height="425" loading="lazy" decoding="async" />
+                        <Image className="img-fluid wow zoomIn" data-wow-delay="0.5s" src="/img/about.jpg" alt="BrandKarlo team working on a digital marketing strategy" width={600} height={425} style={{ width: "100%", height: "auto" }} loading="lazy" />
                     </div>
                 </div>
             </div>

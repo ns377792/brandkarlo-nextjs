@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: { absolute: "About BrandKarlo | Our Digital Marketing Agency Story" },
   description: "Learn how BrandKarlo helps startups, local businesses and growing brands build a powerful online presence through strategic, data-driven digital marketing.",
@@ -33,7 +35,7 @@ export default function Page() {
         Helping Brands Grow with Smart Digital Strategies
     </div>
 
-    <img src="/img/about.jpg" alt="BrandKarlo digital marketing team at work" style={{ width: '100%', borderRadius: '10px', marginBottom: '25px' }} width="600" height="425" loading="lazy" decoding="async" />
+    <Image src="/img/about.jpg" alt="BrandKarlo digital marketing team at work" style={{ width: '100%', height: 'auto', borderRadius: '10px', marginBottom: '25px' }} width={600} height={425} loading="lazy" />
 
     <p>
         Hi, we are <strong>BrandKarlo</strong> — a full-service 

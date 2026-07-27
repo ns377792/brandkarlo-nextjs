@@ -27,37 +27,6 @@ export default function SiteChrome() {
     }
   }, [wowLoaded]);
 
-  // Basic contact / consultation form handling (no backend wired up yet).
-  // Prevents a dead-end page reload on submit and gives the user feedback.
-  useEffect(() => {
-    const forms = Array.from(document.querySelectorAll("form"));
-    const cleanups = [];
-
-    forms.forEach((form) => {
-      if (form.hasAttribute("data-no-js-handler")) return;
-      const onSubmit = (e) => {
-        if (!form.getAttribute("action")) {
-          e.preventDefault();
-          const btn = form.querySelector('button[type="submit"]');
-          if (btn) {
-            const originalHTML = btn.innerHTML;
-            btn.textContent = "Message Sent!";
-            btn.disabled = true;
-            setTimeout(() => {
-              btn.innerHTML = originalHTML;
-              btn.disabled = false;
-              form.reset();
-            }, 2500);
-          }
-        }
-      };
-      form.addEventListener("submit", onSubmit);
-      cleanups.push(() => form.removeEventListener("submit", onSubmit));
-    });
-
-    return () => cleanups.forEach((fn) => fn());
-  }, [pathname]);
-
   useEffect(() => {
     if (typeof window !== "undefined" && window.WOW) {
       new window.WOW().init();

@@ -1,3 +1,4 @@
+import { Heebo, Roboto } from "next/font/google";
 import "./bootstrap.min.css";
 import "./style.css";
 import "./blog.css";
@@ -5,6 +6,20 @@ import "animate.css/animate.min.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
+
+const heebo = Heebo({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-heebo",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+  display: "swap",
+});
 
 export const metadata = {
   metadataBase: new URL("https://www.brandkarlo.in"),
@@ -44,14 +59,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${heebo.variable} ${roboto.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           rel="stylesheet"
