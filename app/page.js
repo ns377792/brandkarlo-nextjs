@@ -185,7 +185,7 @@ export default function Page() {
                             </div>
                             <h3 className="mb-3">Search Engine Optimization (SEO)</h3>
                             <p>Improve your Google rankings and drive consistent organic traffic to your website.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/seo">Read More</a>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -195,7 +195,7 @@ export default function Page() {
                             </div>
                             <h3 className="mb-3">Website Design & Development</h3>
                             <p>Fast, responsive, and conversion-focused websites built for your business.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/website-development">Read More</a>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
@@ -205,17 +205,17 @@ export default function Page() {
                             </div>
                             <h3 className="mb-3">Social Media Marketing</h3>
                             <p>Grow your brand and engage your audience on Facebook, Instagram, LinkedIn, and more.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/social-media-marketing">Read More</a>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                         <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon flex-shrink-0">
-                                <i className="fas fa-robot fa-2x"></i>
+                                <i className="fa fa-pen-nib fa-2x"></i>
                             </div>
-                            <h3 className="mb-3">AI Marketing Automation</h3>
-                            <p>Automate customer engagement, lead nurturing, and marketing workflows using AI.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <h3 className="mb-3">Content Marketing</h3>
+                            <p>Attract and engage your audience with blogs, videos, and content that builds trust and drives traffic.</p>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/content-marketing">Read More</a>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -225,17 +225,17 @@ export default function Page() {
                             </div>
                             <h3 className="mb-3">Google Ads (PPC)</h3>
                             <p>Generate instant leads and maximize ROI with high-performing Google Ads campaigns.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/google-ads-meta-ads">Read More</a>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                         <div className="service-item d-flex flex-column justify-content-center text-center rounded">
                             <div className="service-icon flex-shrink-0">
-                                <i className="fa fa-mobile-alt fa-2x"></i>
+                                <i className="fa fa-envelope-open-text fa-2x"></i>
                             </div>
-                            <h3 className="mb-3">Branding & Graphic Design</h3>
-                            <p>Create a memorable brand identity with professional logos, creatives, and brand assets.</p>
-                            <a className="btn px-3 mt-auto mx-auto" href="/service">Read More</a>
+                            <h3 className="mb-3">Email Marketing</h3>
+                            <p>Nurture leads and turn subscribers into repeat customers with high-converting email campaigns.</p>
+                            <a className="btn px-3 mt-auto mx-auto" href="/service/email-marketing">Read More</a>
                         </div>
                     </div>
                 </div>

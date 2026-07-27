@@ -38,13 +38,14 @@ export default function Footer() {
             <p className="text-white mb-4 fw-medium fs-5">Get In Touch</p>
             <p><i className="fa fa-map-marker-alt me-3"></i>Dwarka More, New Delhi-110043, India</p>
             <p><i className="fa fa-phone-alt me-3"></i>+91 8375948879</p>
-            <p><i className="fa fa-envelope me-3"></i>Contact@iamnitinsingh.in</p>
+            <p><i className="fa fa-envelope me-3"></i><a href="mailto:info@brandkarlo.in">info@brandkarlo.in</a></p>
+            <p><i className="fa fa-envelope me-3"></i><a href="mailto:contact@brandkarlo.in">contact@brandkarlo.in</a></p>
             <div className="d-flex pt-2">
               <a className="btn btn-outline-light btn-social" href="https://x.com/brand_karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on X"><i className="fab fa-x-twitter"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61591983697228" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Facebook"><i className="fab fa-facebook-f"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://youtube.com/@Brand_Karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on YouTube"><i className="fab fa-youtube"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/brand_karlo/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
-              <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/nitin-thakur-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/brandkarlo-in-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
