@@ -1,18 +1,18 @@
 export const metadata = {
-  title: { absolute: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency" },
+  title: { absolute: "Frequently Asked Questions | BrandKarlo" },
   description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
   alternates: {
     canonical: "https://www.brandkarlo.in/faq",
   },
   openGraph: {
     type: "website",
-    title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
+    title: "Frequently Asked Questions | BrandKarlo",
     description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
     url: "https://www.brandkarlo.in/faq",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frequently Asked Questions | BrandKarlo Digital Marketing Agency",
+    title: "Frequently Asked Questions | BrandKarlo",
     description: "Find answers to common questions about BrandKarlo's SEO, website development, social media, Google Ads, and branding services.",
   },
 };

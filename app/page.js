@@ -158,7 +158,7 @@ export default function Page() {
                             <a className="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/profile.php?id=61591983697228" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Facebook"><i className="fab fa-facebook-f"></i></a>
                             <a className="btn btn-outline-primary btn-square me-3" href="https://x.com/brand_karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on X"><i className="fab fa-x-twitter"></i></a>
                             <a className="btn btn-outline-primary btn-square me-3" href="https://www.instagram.com/brand_karlo/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
-                            <a className="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/nitin-thakur-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+                            <a className="btn btn-outline-primary btn-square" href="https://www.linkedin.com/in/brandkarlo-in-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -492,6 +492,40 @@ export default function Page() {
 {/* Start TESTIMONIALS */}
 
 <TestimonialCarousel>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "BrandKarlo",
+      url: "https://www.brandkarlo.in/",
+      review: [
+        {
+          "@type": "Review",
+          reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+          author: { "@type": "Person", name: "Rohit Sharma" },
+          reviewBody:
+            "BrandKarlo transformed our online presence completely. Our website looks professional and the SEO work they did increased our organic traffic by 270% in just 6 months!",
+        },
+        {
+          "@type": "Review",
+          reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+          author: { "@type": "Person", name: "Anjali Mehta" },
+          reviewBody:
+            "Their Google Ads campaigns are top-notch. We saw a 5X increase in leads and the ROI was beyond our expectations. The team is highly professional and supportive.",
+        },
+        {
+          "@type": "Review",
+          reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+          author: { "@type": "Person", name: "Vikram Solanki" },
+          reviewBody:
+            "From branding to website and social media management, BrandKarlo handled everything perfectly. Our brand engagement has grown tremendously. Highly recommended!",
+        },
+      ],
+    }),
+  }}
+/>
 <section className="testimonials">
   <div className="container">
 

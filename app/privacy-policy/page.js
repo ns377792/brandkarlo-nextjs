@@ -56,7 +56,7 @@ export default function Page() {
                         <p>Our site may use third-party tools (such as analytics or advertising platforms) that collect information under their own privacy policies. We encourage you to review those policies as well.</p>
 
                         <h2>Your Rights</h2>
-                        <p>You can request access to, correction of, or deletion of your personal data at any time by contacting us at <a href="mailto:Contact@iamnitinsingh.in">Contact@iamnitinsingh.in</a>.</p>
+                        <p>You can request access to, correction of, or deletion of your personal data at any time by contacting us at <a href="mailto:contact@brandkarlo.in">contact@brandkarlo.in</a>.</p>
 
                         <h2>Changes to This Policy</h2>
                         <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page.</p>

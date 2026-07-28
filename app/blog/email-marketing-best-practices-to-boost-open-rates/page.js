@@ -2,7 +2,7 @@ import { getPostBySlug } from "@/lib/blogData";
 import BlogDetail from "@/components/BlogDetail";
 const post = getPostBySlug("email-marketing-best-practices-to-boost-open-rates");
 export const metadata = {
-  title: { absolute: "Email Marketing Best Practices to Boost Open Rates | BrandKarlo Blog" },
+  title: { absolute: "Email Marketing Tips to Boost Open Rates | BrandKarlo" },
   description:
     "Email marketing best practices to boost open rates, deliverability, and conversions for your subscriber list.",
   alternates: {
@@ -10,13 +10,13 @@ export const metadata = {
   },
   openGraph: {
     type: "article",
-    title: "Email Marketing Best Practices to Boost Open Rates | BrandKarlo Blog",
+    title: "Email Marketing Tips to Boost Open Rates | BrandKarlo",
     description: "Email marketing best practices to boost open rates, deliverability, and conversions for your subscriber list.",
     url: "https://www.brandkarlo.in/blog/email-marketing-best-practices-to-boost-open-rates",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Email Marketing Best Practices to Boost Open Rates | BrandKarlo Blog",
+    title: "Email Marketing Tips to Boost Open Rates | BrandKarlo",
     description: "Email marketing best practices to boost open rates, deliverability, and conversions for your subscriber list.",
   },
 };

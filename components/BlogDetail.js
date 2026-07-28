@@ -244,6 +244,43 @@ export default function BlogDetail({ post }) {
               </div>
             )}
 
+            {/* FAQ */}
+            {post.faqs && post.faqs.length > 0 && (
+              <div className="blog-detail-faq">
+                <h2 className="blog-detail-h2">Frequently Asked Questions</h2>
+                <div className="accordion" id={`faqAccordion-${post.slug}`}>
+                  {post.faqs.map((faq, i) => {
+                    const headingId = `faqHeading-${post.slug}-${i}`;
+                    const collapseId = `faqCollapse-${post.slug}-${i}`;
+                    return (
+                      <div className="accordion-item" key={collapseId}>
+                        <h3 className="accordion-header" id={headingId}>
+                          <button
+                            className={`accordion-button${i === 0 ? "" : " collapsed"}`}
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#${collapseId}`}
+                            aria-expanded={i === 0 ? "true" : "false"}
+                            aria-controls={collapseId}
+                          >
+                            {faq.question}
+                          </button>
+                        </h3>
+                        <div
+                          id={collapseId}
+                          className={`accordion-collapse collapse${i === 0 ? " show" : ""}`}
+                          aria-labelledby={headingId}
+                          data-bs-parent={`#faqAccordion-${post.slug}`}
+                        >
+                          <div className="accordion-body">{faq.answer}</div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             {/* CTA */}
             <div className="blog-detail-cta">
               <div>

@@ -64,6 +64,25 @@ export default function ServiceDetail({ service }) {
           }),
         }}
       />
+      {service.faqs && service.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: service.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
       <div className="navbar-offset-spacer"></div>
 
       <div className="ns-about-container ns-service-container">
@@ -118,6 +137,42 @@ export default function ServiceDetail({ service }) {
                 </li>
               )}
             </ul>
+          </>
+        )}
+
+        {service.faqs && service.faqs.length > 0 && (
+          <>
+            <h2>Frequently Asked Questions</h2>
+            <div className="accordion" id={`faqAccordion-${service.slug}`}>
+              {service.faqs.map((faq, i) => {
+                const headingId = `faqHeading-${service.slug}-${i}`;
+                const collapseId = `faqCollapse-${service.slug}-${i}`;
+                return (
+                  <div className="accordion-item" key={collapseId}>
+                    <h3 className="accordion-header" id={headingId}>
+                      <button
+                        className={`accordion-button${i === 0 ? "" : " collapsed"}`}
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#${collapseId}`}
+                        aria-expanded={i === 0 ? "true" : "false"}
+                        aria-controls={collapseId}
+                      >
+                        {faq.question}
+                      </button>
+                    </h3>
+                    <div
+                      id={collapseId}
+                      className={`accordion-collapse collapse${i === 0 ? " show" : ""}`}
+                      aria-labelledby={headingId}
+                      data-bs-parent={`#faqAccordion-${service.slug}`}
+                    >
+                      <div className="accordion-body">{faq.answer}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </>
         )}
 
