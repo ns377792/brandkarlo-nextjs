@@ -69,7 +69,7 @@ export default function Page() {
 
                 <div className="text-center mt-5">
                     <h3 className="mb-3">Don't see a role that fits?</h3>
-                    <p className="mb-4">Send us your resume and a short note about what you'd like to work on — we'd still love to hear from you.</p>
+                    <p className="mb-4">Send us your resume and a short note about what you'd like to work on. We'd still love to hear from you.</p>
                     <a href="mailto:contact@brandkarlo.in?subject=Career%20Application" className="btn btn-primary rounded-pill px-5 py-3">Email Your Resume</a>
                 </div>
             </div>

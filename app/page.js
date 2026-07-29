@@ -15,7 +15,7 @@ export default function Page() {
                         <div className="col-lg-6 text-center text-lg-start animated fadeIn">
                             <span className="bk-badge">🚀 Digital Growth Partner For Your Business</span>
                             <h1 className="bk-hero-title">We Drive Growth Through Smart <span className="bk-gradient-text">Digital Strategies</span></h1>
-                            <p className="bk-hero-sub">From SEO and Google Ads to web design and branding — we help startups, local businesses, and growing brands rank higher, generate more leads, and convert better.</p>
+                            <p className="bk-hero-sub">From SEO and Google Ads to web design and branding, we help startups, local businesses, and growing brands rank higher, generate more leads, and convert better.</p>
                             <div className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-4">
                                 <a href="/get-free-consultation" className="btn bk-btn-gradient rounded-pill px-4 py-3">Get Free Consultation <i className="fa fa-arrow-right ms-2"></i></a>
                                 <a href="/service" className="btn bk-btn-outline rounded-pill px-4 py-3">View Our Work</a>
@@ -142,7 +142,7 @@ export default function Page() {
                             <span className="section-kicker position-relative text-primary ps-4">About BrandKarlo</span>
                             <h2 className="mt-2">Building Brands That People Trust</h2>
                         </div>
-                        <p className="mb-4">At BrandKarlo, we help businesses establish a powerful online presence through strategic digital marketing. From SEO and website development to paid advertising and branding, our goal is simple—deliver measurable growth, quality leads, and long-term success.</p>
+                        <p className="mb-4">At BrandKarlo, we help businesses establish a powerful online presence through strategic digital marketing. From SEO and website development to paid advertising and branding, our goal is simple: deliver measurable growth, quality leads, and long-term success.</p>
                         <div className="row g-3">
                             <div className="col-sm-6">
                                 <p className="mb-3 fw-semibold"><i className="fa fa-check text-primary me-2"></i>SEO & Local SEO</p>

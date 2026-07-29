@@ -20,7 +20,7 @@ export default function NotFound() {
           </span>
           <h1 className="mt-3 mb-3">This page took a wrong turn</h1>
           <p className="mb-4" style={{ maxWidth: "560px", margin: "0 auto 2rem", color: "#5B5876" }}>
-            The page you're looking for doesn't exist or may have moved. Let's get you back on track —
+            The page you're looking for doesn't exist or may have moved. Let's get you back on track;
             here are a few places to start.
           </p>
 

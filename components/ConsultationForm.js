@@ -107,7 +107,7 @@ export default function ConsultationForm() {
 
       {status === "success" && (
         <p style={{ color: "#2e7d32", marginTop: "12px", fontWeight: 500 }}>
-          Thanks! Your request has been sent — we&apos;ll contact you shortly.
+          Thanks! Your request has been sent. We&apos;ll contact you shortly.
         </p>
       )}
       {status === "error" && (

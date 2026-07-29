@@ -84,7 +84,7 @@ export default function ContactForm() {
         {status === "success" && (
           <div className="col-12">
             <div className="alert alert-success mb-0" role="alert">
-              Thanks! Your message has been sent — we&apos;ll get back to you soon.
+              Thanks! Your message has been sent. We&apos;ll get back to you soon.
             </div>
           </div>
         )}

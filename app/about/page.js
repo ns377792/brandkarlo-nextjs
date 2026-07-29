@@ -38,7 +38,7 @@ export default function Page() {
     <Image src="/img/about.jpg" alt="BrandKarlo digital marketing team at work" style={{ width: '100%', height: 'auto', borderRadius: '10px', marginBottom: '25px' }} width={600} height={425} loading="lazy" />
 
     <p>
-        Hi, we are <strong>BrandKarlo</strong> — a full-service 
+        Hi, we are <strong>BrandKarlo</strong>, a full-service 
         <strong>Digital Marketing Agency</strong> based in India, passionate about helping startups, local businesses, and growing brands build a powerful online presence.
     </p>
 
@@ -86,7 +86,7 @@ export default function Page() {
 
     <p>
         We combine strategy, creativity, and technology to build digital solutions that actually move the needle.
-        Our focus isn't just traffic or likes — it's real business growth: more visibility, more leads, more revenue.
+        Our focus isn't just traffic or likes. It's real business growth: more visibility, more leads, more revenue.
     </p>
 
 

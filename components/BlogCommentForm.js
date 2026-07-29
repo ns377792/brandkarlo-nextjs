@@ -52,7 +52,7 @@ export default function BlogCommentForm({ postTitle, postSlug }) {
     <section className="blog-comment-section">
       <h2 className="blog-detail-related-title">Leave a Comment</h2>
       <p className="blog-comment-subtitle">
-        Have a question or thought about this article? Send it our way — our team reads every comment.
+        Have a question or thought about this article? Send it our way. Our team reads every comment.
       </p>
 
       <form onSubmit={handleSubmit} className="blog-comment-form">
