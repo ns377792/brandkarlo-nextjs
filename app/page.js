@@ -25,11 +25,11 @@ export default function Page() {
                                     <img src="/img/avatar-1.svg" alt="Happy BrandKarlo client" />
                                     <img src="/img/avatar-2.svg" alt="Happy BrandKarlo client" />
                                     <img src="/img/avatar-3.svg" alt="Happy BrandKarlo client" />
-                                    <span className="bk-avatar-more">+100</span>
+                                    <span className="bk-avatar-more">+10</span>
                                 </div>
                                 <div className="text-start">
                                     <div className="bk-stars"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></div>
-                                    <small className="bk-muted">4.9/5 from 100+ clients</small>
+                                    <small className="bk-muted">5.0/5 on Google (2 reviews)</small>
                                 </div>
                             </div>
                         </div>
@@ -113,15 +113,15 @@ export default function Page() {
                     <div className="bk-stats-strip mt-4">
                         <div className="bk-stat-item">
                             <i className="fa fa-users"></i>
-                            <div><strong>150+</strong><small>Projects Completed</small></div>
+                            <div><strong>10</strong><small>Projects Completed</small></div>
                         </div>
                         <div className="bk-stat-item">
                             <i className="fa fa-smile"></i>
-                            <div><strong>50+</strong><small>Happy Clients</small></div>
+                            <div><strong>10+</strong><small>Happy Clients</small></div>
                         </div>
                         <div className="bk-stat-item">
                             <i className="fa fa-trophy"></i>
-                            <div><strong>6+</strong><small>Years of Experience</small></div>
+                            <div><strong>2+</strong><small>Years of Experience</small></div>
                         </div>
                         <div className="bk-stat-item">
                             <i className="fa fa-chart-line"></i>
@@ -555,7 +555,7 @@ export default function Page() {
           <img src="/img/quote-stat.svg" alt="Happy clients icon" />
         </span>
         <div className="stat-text">
-          <span className="stat-value">100+</span>
+          <span className="stat-value">10+</span>
           <span className="stat-label">Happy Clients</span>
         </div>
       </div>
@@ -565,7 +565,7 @@ export default function Page() {
           <img src="/img/shield-stat.svg" alt="Satisfaction rate icon" />
         </span>
         <div className="stat-text">
-          <span className="stat-value">95%</span>
+          <span className="stat-value">99%</span>
           <span className="stat-label">Satisfaction Rate</span>
         </div>
       </div>
@@ -589,7 +589,7 @@ export default function Page() {
               <img className="avatar" src="/img/avatar-1.svg" alt="Nitin Thakur" />
               <div>
                 <h3 className="client-name">Nitin Thakur</h3>
-                <span className="client-role">Google review</span>
+                <a className="client-role" href="https://share.google/kEcrrKuIEAv9Ueh8Z" target="_blank" rel="noopener noreferrer">Google review</a>
               </div>
             </div>
             <p className="review-text">
@@ -614,7 +614,7 @@ export default function Page() {
               <img className="avatar" src="/img/avatar-2.svg" alt="Sumit Kumar" />
               <div>
                 <h3 className="client-name">Sumit Kumar</h3>
-                <span className="client-role">Google review</span>
+                <a className="client-role" href="https://share.google/kEcrrKuIEAv9Ueh8Z" target="_blank" rel="noopener noreferrer">Google review</a>
               </div>
             </div>
             <p className="review-text">

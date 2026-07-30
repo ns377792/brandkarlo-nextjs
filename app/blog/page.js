@@ -56,14 +56,14 @@ export default function Page() {
                                     <i className="bi bi-graph-up-arrow"></i>
                                     <div>
                                         <small>Weekly Reads</small>
-                                        <strong>12K+</strong>
+                                        <strong>7K+</strong>
                                     </div>
                                 </div>
                                 <div className="blog-float-card blog-float-bottom">
                                     <i className="bi bi-file-earmark-text"></i>
                                     <div>
                                         <small>Articles</small>
-                                        <strong>150+</strong>
+                                        <strong>11</strong>
                                     </div>
                                 </div>
                                 <div className="blog-plant"><i className="bi bi-flower2"></i></div>

@@ -1786,6 +1786,11 @@ h6,
   font-size: 13.5px;
   color: #2f5bff;
   font-weight: 500;
+  text-decoration: none;
+}
+
+.client-role:hover {
+  text-decoration: underline;
 }
 
 .review-text {
