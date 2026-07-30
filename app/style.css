@@ -574,6 +574,17 @@ h6,
     color: var(--light);
 }
 
+.footer .contact-link {
+    color: var(--light);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer .contact-link:hover {
+    color: var(--light);
+    text-decoration: underline;
+}
+
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
