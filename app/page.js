@@ -500,27 +500,26 @@ export default function Page() {
       "@type": "Organization",
       name: "BrandKarlo",
       url: "https://www.brandkarlo.in/",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5.0",
+        reviewCount: "2",
+        bestRating: "5",
+      },
       review: [
         {
           "@type": "Review",
           reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-          author: { "@type": "Person", name: "Rohit Sharma" },
+          author: { "@type": "Person", name: "Nitin Thakur" },
           reviewBody:
-            "BrandKarlo transformed our online presence completely. Our website looks professional and the SEO work they did increased our organic traffic by 270% in just 6 months!",
+            "Excellent service and professional support. BrandKarlo provides effective digital marketing solutions with clear communication and timely assistance. Highly recommended!",
         },
         {
           "@type": "Review",
           reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-          author: { "@type": "Person", name: "Anjali Mehta" },
+          author: { "@type": "Person", name: "Sumit Kumar" },
           reviewBody:
-            "Their Google Ads campaigns are top-notch. We saw a 5X increase in leads and the ROI was beyond our expectations. The team is highly professional and supportive.",
-        },
-        {
-          "@type": "Review",
-          reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-          author: { "@type": "Person", name: "Vikram Solanki" },
-          reviewBody:
-            "From branding to website and social media management, BrandKarlo handled everything perfectly. Our brand engagement has grown tremendously. Highly recommended!",
+            "I had a great experience with BrandKarlo. Their team is professional, responsive, and knowledgeable in digital marketing. They provide quality services in SEO, website development, and online marketing. I appreciate their timely support and dedication to helping businesses grow online. Highly recommended for anyone looking to improve their digital presence!",
         },
       ],
     }),
@@ -546,8 +545,8 @@ export default function Page() {
           <img src="/img/star.svg" alt="Rating star icon" />
         </span>
         <div className="stat-text">
-          <span className="stat-value">4.9/5</span>
-          <span className="stat-label">Average Rating</span>
+          <span className="stat-value">5.0/5</span>
+          <span className="stat-label">Google Rating</span>
         </div>
       </div>
       <span className="stat-divider"></span>
@@ -587,67 +586,45 @@ export default function Page() {
               <span className="stars">★★★★★</span>
             </div>
             <div className="client-info">
-              <img className="avatar" src="/img/avatar-1.svg" alt="Rohit Sharma" />
+              <img className="avatar" src="/img/avatar-1.svg" alt="Nitin Thakur" />
               <div>
-                <h3 className="client-name">Rohit Sharma</h3>
-                <span className="client-role">Founder, FitLife India</span>
+                <h3 className="client-name">Nitin Thakur</h3>
+                <span className="client-role">Google review</span>
               </div>
             </div>
             <p className="review-text">
-              BrandKarlo transformed our online presence completely. Our website looks professional
-              and the SEO work they did increased our organic traffic by 270% in just 6 months!
+              Excellent service and professional support. BrandKarlo provides effective
+              digital marketing solutions with clear communication and timely assistance.
+              Highly recommended!
+            </p>
+            <div className="card-footer">
+              <img className="check-icon" src="/img/check-badge.svg" alt="Check icon" />
+              <span>Digital Marketing Services</span>
+            </div>
+          </article>
+        </div>
+
+        <div className="testimonial-slide">
+          <article className="testimonial-card">
+            <div className="card-top">
+              <img className="quote-icon" src="/img/quote-mark.svg" alt="Quote icon" />
+              <span className="stars">★★★★★</span>
+            </div>
+            <div className="client-info">
+              <img className="avatar" src="/img/avatar-2.svg" alt="Sumit Kumar" />
+              <div>
+                <h3 className="client-name">Sumit Kumar</h3>
+                <span className="client-role">Google review</span>
+              </div>
+            </div>
+            <p className="review-text">
+              I had a great experience with BrandKarlo. Their team is professional,
+              responsive, and knowledgeable in digital marketing. They provide quality
+              services in SEO, website development, and online marketing.
             </p>
             <div className="card-footer">
               <img className="check-icon" src="/img/check-badge.svg" alt="Check icon" />
               <span>SEO &amp; Website Development</span>
-            </div>
-          </article>
-        </div>
-
-        <div className="testimonial-slide">
-          <article className="testimonial-card">
-            <div className="card-top">
-              <img className="quote-icon" src="/img/quote-mark.svg" alt="Quote icon" />
-              <span className="stars">★★★★★</span>
-            </div>
-            <div className="client-info">
-              <img className="avatar" src="/img/avatar-2.svg" alt="Anjali Mehta" />
-              <div>
-                <h3 className="client-name">Anjali Mehta</h3>
-                <span className="client-role">Marketing Head, EduLearn</span>
-              </div>
-            </div>
-            <p className="review-text">
-              Their Google Ads campaigns are top-notch. We saw a 5X increase in leads and the ROI
-              was beyond our expectations. The team is highly professional and supportive.
-            </p>
-            <div className="card-footer">
-              <img className="check-icon" src="/img/check-badge.svg" alt="Check icon" />
-              <span>Google Ads &amp; Lead Generation</span>
-            </div>
-          </article>
-        </div>
-
-        <div className="testimonial-slide">
-          <article className="testimonial-card">
-            <div className="card-top">
-              <img className="quote-icon" src="/img/quote-mark.svg" alt="Quote icon" />
-              <span className="stars">★★★★★</span>
-            </div>
-            <div className="client-info">
-              <img className="avatar" src="/img/avatar-3.svg" alt="Vikram Solanki" />
-              <div>
-                <h3 className="client-name">Vikram Solanki</h3>
-                <span className="client-role">CEO, ShopKraft</span>
-              </div>
-            </div>
-            <p className="review-text">
-              From branding to website and social media management, BrandKarlo handled everything
-              perfectly. Our brand engagement has grown tremendously. Highly recommended!
-            </p>
-            <div className="card-footer">
-              <img className="check-icon" src="/img/check-badge.svg" alt="Check icon" />
-              <span>Branding &amp; Social Media</span>
             </div>
           </article>
         </div>
@@ -660,7 +637,13 @@ export default function Page() {
     <div className="dots-nav" id="dotsNav">
       <span className="dot active" data-index="0"></span>
       <span className="dot" data-index="1"></span>
-      <span className="dot" data-index="2"></span>
+    </div>
+
+    <div className="google-reviews-link">
+      <a href="https://share.google/kEcrrKuIEAv9Ueh8Z" target="_blank" rel="noopener noreferrer">
+        <img src="/img/star.svg" alt="" role="presentation" style={{ width: "18px", height: "18px", verticalAlign: "middle", marginRight: "8px" }} />
+        Read all our reviews on Google
+      </a>
     </div>
 
     {/* CTA Banner */}
