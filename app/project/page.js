@@ -32,6 +32,41 @@ const filters = [
 export default function Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.brandkarlo.in/" },
+              { "@type": "ListItem", position: 2, name: "Projects", item: "https://www.brandkarlo.in/project" },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "BrandKarlo Projects & Case Studies",
+            url: "https://www.brandkarlo.in/project",
+            description:
+              "Browse BrandKarlo's recent client projects across web design, SEO, Google Ads, branding and social media marketing.",
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: projectsData.map((project, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                name: project.title,
+                url: `https://www.brandkarlo.in/project/${project.slug}`,
+              })),
+            },
+          }),
+        }}
+      />
       <div className="navbar-offset-spacer"></div>
 
       {/* Portfolio Start */}

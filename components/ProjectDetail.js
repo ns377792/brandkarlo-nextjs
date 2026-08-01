@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { getServiceBySlug } from "@/lib/servicesData";
+import { getRelatedProjects } from "@/lib/projectsData";
 
 export default function ProjectDetail({ project }) {
   const projectUrl = `https://www.brandkarlo.in/project/${project.slug}`;
   const relatedService = project.relatedServiceSlug
     ? getServiceBySlug(project.relatedServiceSlug)
     : null;
+  const relatedProjects = getRelatedProjects(project.slug, 3);
 
   return (
     <>
@@ -107,6 +109,36 @@ export default function ProjectDetail({ project }) {
             {project.ctaText}
           </Link>
         </div>
+
+        {relatedProjects.length > 0 && (
+          <>
+            <h2>More Projects</h2>
+            <div className="related-projects-grid">
+              {relatedProjects.map((rp) => (
+                <article className="card" key={rp.slug}>
+                  <div className={`card-preview preview-${rp.category} has-img`}>
+                    <Image
+                      className="project-img"
+                      src={rp.image}
+                      alt={rp.imageAlt}
+                      fill
+                      sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="card-body">
+                    <h3 className="card-title">{rp.title}</h3>
+                    <p className="card-desc">{rp.shortDesc}</p>
+                  </div>
+                  <div className="card-footer">
+                    <Link href={`/project/${rp.slug}`} className="view-link">
+                      Read More <span className="arrow">&rarr;</span>
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </>
+        )}
 
         <div className="ns-service-back">
           <Link href="/project">&larr; Back to All Projects</Link>
