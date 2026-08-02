@@ -46,6 +46,7 @@ export default function Footer() {
               <a className="btn btn-outline-light btn-social" href="https://youtube.com/@Brand_Karlo" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on YouTube"><i className="fab fa-youtube"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.instagram.com/brand_karlo/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Instagram"><i className="fab fa-instagram"></i></a>
               <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/brandkarlo-in-11326327a/" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+              <a className="btn btn-outline-light btn-social" href="https://share.google/jWxjIprWbC4sWoHXZ" target="_blank" rel="noopener noreferrer" aria-label="BrandKarlo on Google Business Profile"><i className="fab fa-google"></i></a>
             </div>
           </div>
         </div>

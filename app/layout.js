@@ -80,6 +80,7 @@ export default function RootLayout({ children }) {
                 "https://www.instagram.com/brand_karlo/",
                 "https://www.linkedin.com/in/brandkarlo-in-11326327a/",
                 "https://youtube.com/@Brand_Karlo",
+                "https://share.google/jWxjIprWbC4sWoHXZ",
               ],
             }),
           }}
