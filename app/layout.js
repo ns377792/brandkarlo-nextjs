@@ -1,3 +1,5 @@
+import { Heebo, Roboto } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./bootstrap.min.css";
 import "./style.css";
 import "./blog.css";
@@ -5,6 +7,20 @@ import "animate.css/animate.min.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
+
+const heebo = Heebo({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-heebo",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+  display: "swap",
+});
 
 export const metadata = {
   metadataBase: new URL("https://www.brandkarlo.in"),
@@ -44,8 +60,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${heebo.variable} ${roboto.variable}`}>
       <head>
+        <GoogleTagManager gtmId="GTM-MW8KGMDB" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           rel="stylesheet"
@@ -87,6 +104,16 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MW8KGMDB"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <div className="container-fluid bg-white p-0" id="top">
           <SiteChrome />
           <div className="container-fluid position-relative p-0">
