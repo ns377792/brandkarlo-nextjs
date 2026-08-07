@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThankYouTracking from "@/components/ThankYouTracking";
 
 export const metadata = {
   title: { absolute: "Thank You | BrandKarlo" },
@@ -26,6 +27,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <ThankYouTracking />
       <div className="navbar-offset-spacer"></div>
 
       {/* Thank You Start */}
