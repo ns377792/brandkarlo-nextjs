@@ -1,4 +1,4 @@
-import { Heebo, Roboto } from "next/font/google";
+
 import { GoogleTagManager } from "@next/third-parties/google";
 import "./bootstrap.min.css";
 import "./style.css";
@@ -8,19 +8,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SiteChrome from "@/components/SiteChrome";
 
-const heebo = Heebo({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-heebo",
-  display: "swap",
-});
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-roboto",
-  display: "swap",
-});
+const heebo = { variable: "" };
+const roboto = { variable: "" };
 
 export const metadata = {
   metadataBase: new URL("https://www.brandkarlo.in"),
