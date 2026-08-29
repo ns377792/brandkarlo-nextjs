@@ -218,7 +218,6 @@ Each entry looks like this:
 | `components/Header.js` | Top navbar, mobile menu toggle, sticky-on-scroll behavior |
 | `components/Footer.js` | Footer — links, contact info, social icons |
 | `components/SiteChrome.js` | Loading spinner, "back to top" button, scroll animations |
-| `components/FilterGrid.js` | Category filter buttons (used on `/project`) |
 | `components/TestimonialCarousel.js` | Homepage testimonial slider |
 | `components/BlogFilterPagination.js` | Blog category filter + pagination |
 | `components/ServiceDetail.js` | Shared layout for all `/service/[slug]` pages |
