@@ -34,78 +34,59 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="col-lg-6 animated fadeIn" data-wow-delay="0.2s">
-                            <div className="bk-dashboard-wrap">
-                                <div className="bk-dashboard-card">
-                                    <div className="d-flex align-items-center justify-content-between mb-4">
-                                        <p className="mb-0 fw-bold">Performance Overview</p>
-                                        <span className="bk-chip">This Month <i className="fa fa-chevron-down ms-1"></i></span>
-                                    </div>
-                                    <div className="row g-3 mb-4">
-                                        <div className="col-6 col-md-3">
-                                            <div className="bk-metric">
-                                                <i className="fa fa-users"></i>
-                                                <small className="bk-muted d-block">Total Visitors</small>
-                                                <strong>32.6K</strong>
-                                                <span className="bk-up">+18.6%</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-md-3">
-                                            <div className="bk-metric">
-                                                <i className="fa fa-chart-line"></i>
-                                                <small className="bk-muted d-block">Total Leads</small>
-                                                <strong>8.45K</strong>
-                                                <span className="bk-up">+24.8%</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-md-3">
-                                            <div className="bk-metric">
-                                                <i className="fa fa-bullseye"></i>
-                                                <small className="bk-muted d-block">Conversion Rate</small>
-                                                <strong>24.6%</strong>
-                                                <span className="bk-up">+16.2%</span>
-                                            </div>
-                                        </div>
-                                        <div className="col-6 col-md-3">
-                                            <div className="bk-metric">
-                                                <i className="fa fa-rupee-sign"></i>
-                                                <small className="bk-muted d-block">Total Revenue</small>
-                                                <strong>₹12.6L</strong>
-                                                <span className="bk-up">+28.5%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="bk-chart-area mb-4">
-                                        <svg viewBox="0 0 400 110" preserveAspectRatio="none" className="bk-chart-svg">
-                                            <polyline fill="none" stroke="url(#bkGrad)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-                                                points="0,70 40,55 80,80 120,40 160,60 200,25 240,50 280,30 320,45 360,15 400,35"></polyline>
-                                            <defs>
-                                                <linearGradient id="bkGrad" x1="0" y1="0" x2="1" y2="0">
-                                                    <stop offset="0%" stopColor="#4F46E5"></stop>
-                                                    <stop offset="100%" stopColor="#9333EA"></stop>
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                    <div className="bk-channels">
-                                        <small className="bk-muted d-block mb-2 fw-bold">Top Channels</small>
-                                        <div className="bk-channel-row"><span>Organic Search</span><div className="bk-bar"><div style={{ width: '45%', background: '#4F46E5' }}></div></div><b>45%</b></div>
-                                        <div className="bk-channel-row"><span>Paid Search</span><div className="bk-bar"><div style={{ width: '30%', background: '#7C3AED' }}></div></div><b>30%</b></div>
-                                        <div className="bk-channel-row"><span>Social Media</span><div className="bk-bar"><div style={{ width: '15%', background: '#DB2777' }}></div></div><b>15%</b></div>
-                                        <div className="bk-channel-row"><span>Direct</span><div className="bk-bar"><div style={{ width: '10%', background: '#F59E0B' }}></div></div><b>10%</b></div>
-                                    </div>
-                                </div>
-                                <div className="bk-float-card bk-float-seo d-none d-lg-block">
-                                    <small className="bk-muted">SEO Rankings</small>
-                                    <div className="d-flex align-items-center gap-2">
-                                        <strong>#1</strong>
-                                        <span className="bk-up"><i className="fa fa-arrow-up"></i> 12</span>
-                                    </div>
-                                </div>
-                                <div className="bk-float-card bk-float-leads d-none d-lg-block">
-                                    <small className="bk-muted">Leads Generated</small>
-                                    <strong>8.45K</strong>
-                                    <span className="bk-up"><i className="fa fa-arrow-up"></i> 24.8%</span>
-                                </div>
+                            <div className="bk-hero-visual">
+                                <svg className="bk-orbit-ring d-none d-lg-block" viewBox="0 0 500 500" aria-hidden="true">
+                                    <ellipse cx="250" cy="250" rx="230" ry="150" fill="none" stroke="#C4B5FD" strokeWidth="1.5" strokeDasharray="2 9" opacity="0.6" transform="rotate(-18 250 250)"></ellipse>
+                                </svg>
+
+                                <div className="bk-rocket-pedestal"></div>
+                                <div className="bk-rocket-cloud"></div>
+
+                                <svg className="bk-rocket-svg" viewBox="0 0 220 340" aria-hidden="true">
+                                    <defs>
+                                        <linearGradient id="bkNoseGrad" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stopColor="#7C3AED"></stop>
+                                            <stop offset="100%" stopColor="#4F46E5"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="bkFlameGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stopColor="#FB923C"></stop>
+                                            <stop offset="55%" stopColor="#FBBF24"></stop>
+                                            <stop offset="100%" stopColor="#FEF3C7"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="bkWindowGrad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stopColor="#DBEAFE"></stop>
+                                            <stop offset="100%" stopColor="#4F8EF7"></stop>
+                                        </linearGradient>
+                                    </defs>
+
+                                    <g className="bk-flame">
+                                        <path d="M90,246 Q72,292 110,332 Q148,292 130,246 Z" fill="url(#bkFlameGrad)"></path>
+                                        <path d="M98,248 Q90,282 110,312 Q130,282 122,248 Z" fill="#FEF3C7" opacity="0.85"></path>
+                                    </g>
+
+                                    <polygon points="63,190 16,252 63,240" fill="url(#bkNoseGrad)"></polygon>
+                                    <polygon points="157,190 204,252 157,240" fill="url(#bkNoseGrad)"></polygon>
+
+                                    <rect x="62" y="68" width="96" height="162" rx="48" fill="#FFFFFF" stroke="#E5DEFA" strokeWidth="2"></rect>
+                                    <rect x="62" y="156" width="96" height="16" fill="#F1EBFF"></rect>
+
+                                    <path d="M62,90 C68,28 152,28 158,90 Z" fill="url(#bkNoseGrad)"></path>
+
+                                    <circle cx="110" cy="140" r="27" fill="url(#bkWindowGrad)" stroke="#2B6FE0" strokeWidth="4"></circle>
+                                    <ellipse cx="100" cy="130" rx="8" ry="5" fill="#FFFFFF" opacity="0.55"></ellipse>
+                                </svg>
+
+                                <div className="bk-float-icon bk-float-icon-seo d-none d-lg-flex">SEO</div>
+                                <div className="bk-float-icon bk-float-icon-search d-none d-lg-flex"><i className="fa fa-search"></i></div>
+                                <div className="bk-float-icon bk-float-icon-chart d-none d-lg-flex"><i className="fa fa-chart-line"></i></div>
+                                <div className="bk-float-icon bk-float-icon-globe d-none d-lg-flex"><i className="fa fa-globe"></i></div>
+                                <div className="bk-float-icon bk-float-icon-megaphone d-none d-lg-flex"><i className="fa fa-bullhorn"></i></div>
+
+                                <i className="fa fa-star bk-hero-star bk-hero-star-1 d-none d-lg-block"></i>
+                                <i className="fa fa-star bk-hero-star bk-hero-star-2 d-none d-lg-block"></i>
+                                <span className="bk-hero-sparkle bk-hero-sparkle-1 d-none d-lg-block"></span>
+                                <span className="bk-hero-sparkle bk-hero-sparkle-2 d-none d-lg-block"></span>
+                                <span className="bk-hero-sparkle bk-hero-sparkle-3 d-none d-lg-block"></span>
                             </div>
                         </div>
                     </div>
