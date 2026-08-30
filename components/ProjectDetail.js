@@ -3,6 +3,59 @@ import Image from "next/image";
 import { getServiceBySlug } from "@/lib/servicesData";
 import { getRelatedProjects } from "@/lib/projectsData";
 
+// Parses lightweight markdown-style links [text](url) within paragraph text
+// so case study content can contain genuine, contextual internal links.
+function renderTextWithLinks(text) {
+  const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  let i = 0;
+
+  while ((match = linkRe.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [, label, href] = match;
+    const isInternal = href.startsWith("/");
+    parts.push(
+      isInternal ? (
+        <Link href={href} key={`link-${i++}`}>
+          {label}
+        </Link>
+      ) : (
+        <a href={href} key={`link-${i++}`} target="_blank" rel="noopener noreferrer">
+          {label}
+        </a>
+      )
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+  return parts;
+}
+
+function CaseStudyBlock({ block, index }) {
+  if (block.type === "h2") {
+    return <h2 key={index}>{block.text}</h2>;
+  }
+  if (block.type === "h3") {
+    return <h3 key={index}>{block.text}</h3>;
+  }
+  if (block.type === "ul") {
+    return (
+      <ul key={index}>
+        {block.items.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
+    );
+  }
+  return <p key={index}>{renderTextWithLinks(block.text)}</p>;
+}
+
 export default function ProjectDetail({ project }) {
   const projectUrl = `https://www.brandkarlo.in/project/${project.slug}`;
   const relatedService = project.relatedServiceSlug
@@ -52,6 +105,7 @@ export default function ProjectDetail({ project }) {
 
         <h1>{project.title}</h1>
         <div className="subtitle">{project.categoryLabel}</div>
+        {project.tagline && <p className="ns-project-tagline">{project.tagline}</p>}
 
         <div className="ns-project-image">
           <Image
@@ -96,6 +150,15 @@ export default function ProjectDetail({ project }) {
             </Link>
             .
           </p>
+        )}
+
+        {project.content && project.content.length > 0 && (
+          <>
+            <hr className="ns-project-article-divider" />
+            {project.content.map((block, i) => (
+              <CaseStudyBlock block={block} index={i} key={i} />
+            ))}
+          </>
         )}
 
         <h2>Want Results Like This?</h2>

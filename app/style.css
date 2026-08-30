@@ -746,6 +746,29 @@ h6,
 .ns-project-tag-emerald { background: #dff5ec; color: #059669; }
 .ns-project-tag-orange  { background: #ffe9d6; color: #ea7c1f; }
 
+.ns-project-tagline {
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #666;
+    max-width: 620px;
+    margin: 0 auto 25px;
+}
+
+.ns-about-container h3 {
+    font-size: 1.22rem;
+    color: #222;
+    margin-top: 1.7rem;
+    margin-bottom: .7rem;
+    font-weight: 700;
+}
+
+.ns-project-article-divider {
+    border: none;
+    border-top: 2px solid #f0f0f0;
+    margin: 35px 0 5px;
+}
+
 
 /* =======================================================================
    PORTFOLIO SECTION
