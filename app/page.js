@@ -44,36 +44,72 @@ export default function Page() {
 
                                 <svg className="bk-rocket-svg" viewBox="0 0 220 340" aria-hidden="true">
                                     <defs>
-                                        <linearGradient id="bkNoseGrad" x1="0" y1="0" x2="1" y2="1">
-                                            <stop offset="0%" stopColor="#7C3AED"></stop>
-                                            <stop offset="100%" stopColor="#4F46E5"></stop>
+                                        <linearGradient id="bkBodyGrad" x1="0" y1="0" x2="1" y2="0">
+                                            <stop offset="0%" stopColor="#FFFFFF"></stop>
+                                            <stop offset="48%" stopColor="#FFFFFF"></stop>
+                                            <stop offset="72%" stopColor="#ECE7FA"></stop>
+                                            <stop offset="100%" stopColor="#CFC3EE"></stop>
                                         </linearGradient>
+                                        <linearGradient id="bkNoseGrad" x1="0.15" y1="0" x2="0.9" y2="1">
+                                            <stop offset="0%" stopColor="#A78BFA"></stop>
+                                            <stop offset="45%" stopColor="#7C3AED"></stop>
+                                            <stop offset="100%" stopColor="#5B21B6"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="bkFinGradL" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stopColor="#A78BFA"></stop>
+                                            <stop offset="100%" stopColor="#6D28D9"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="bkFinGradR" x1="0" y1="0" x2="1" y2="1">
+                                            <stop offset="0%" stopColor="#6D28D9"></stop>
+                                            <stop offset="100%" stopColor="#4C1D95"></stop>
+                                        </linearGradient>
+                                        <radialGradient id="bkWindowGrad" cx="35%" cy="30%" r="75%">
+                                            <stop offset="0%" stopColor="#F0F9FF"></stop>
+                                            <stop offset="35%" stopColor="#93C5FD"></stop>
+                                            <stop offset="70%" stopColor="#3B82F6"></stop>
+                                            <stop offset="100%" stopColor="#1D4ED8"></stop>
+                                        </radialGradient>
                                         <linearGradient id="bkFlameGrad" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stopColor="#FB923C"></stop>
-                                            <stop offset="55%" stopColor="#FBBF24"></stop>
-                                            <stop offset="100%" stopColor="#FEF3C7"></stop>
+                                            <stop offset="0%" stopColor="#F97316"></stop>
+                                            <stop offset="45%" stopColor="#FBBF24"></stop>
+                                            <stop offset="80%" stopColor="#FDE68A"></stop>
+                                            <stop offset="100%" stopColor="#FFFBEB"></stop>
                                         </linearGradient>
-                                        <linearGradient id="bkWindowGrad" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stopColor="#DBEAFE"></stop>
-                                            <stop offset="100%" stopColor="#4F8EF7"></stop>
+                                        <radialGradient id="bkFlameGlow" cx="50%" cy="10%" r="65%">
+                                            <stop offset="0%" stopColor="#FBBF24" stopOpacity="0.55"></stop>
+                                            <stop offset="100%" stopColor="#FBBF24" stopOpacity="0"></stop>
+                                        </radialGradient>
+                                        <linearGradient id="bkNozzleGrad" x1="0" y1="0" x2="1" y2="0">
+                                            <stop offset="0%" stopColor="#C4B5FD"></stop>
+                                            <stop offset="50%" stopColor="#7C3AED"></stop>
+                                            <stop offset="100%" stopColor="#4C1D95"></stop>
                                         </linearGradient>
                                     </defs>
 
+                                    <ellipse className="bk-flame-glow" cx="110" cy="270" rx="70" ry="90" fill="url(#bkFlameGlow)"></ellipse>
+
                                     <g className="bk-flame">
-                                        <path d="M90,246 Q72,292 110,332 Q148,292 130,246 Z" fill="url(#bkFlameGrad)"></path>
-                                        <path d="M98,248 Q90,282 110,312 Q130,282 122,248 Z" fill="#FEF3C7" opacity="0.85"></path>
+                                        <path d="M88,244 Q68,294 110,336 Q152,294 132,244 Z" fill="url(#bkFlameGrad)"></path>
+                                        <path d="M97,246 Q88,282 110,314 Q132,282 123,246 Z" fill="#FEF3C7" opacity="0.9"></path>
                                     </g>
 
-                                    <polygon points="63,190 16,252 63,240" fill="url(#bkNoseGrad)"></polygon>
-                                    <polygon points="157,190 204,252 157,240" fill="url(#bkNoseGrad)"></polygon>
+                                    <ellipse cx="110" cy="244" rx="32" ry="9" fill="url(#bkNozzleGrad)"></ellipse>
 
-                                    <rect x="62" y="68" width="96" height="162" rx="48" fill="#FFFFFF" stroke="#E5DEFA" strokeWidth="2"></rect>
-                                    <rect x="62" y="156" width="96" height="16" fill="#F1EBFF"></rect>
+                                    <polygon points="63,188 14,252 63,238" fill="url(#bkFinGradL)"></polygon>
+                                    <polygon points="157,188 206,252 157,238" fill="url(#bkFinGradR)"></polygon>
 
-                                    <path d="M62,90 C68,28 152,28 158,90 Z" fill="url(#bkNoseGrad)"></path>
+                                    <rect x="62" y="66" width="96" height="164" rx="48" fill="url(#bkBodyGrad)" stroke="#E5DEFA" strokeWidth="1.5"></rect>
+                                    <rect x="74" y="84" width="13" height="118" rx="6.5" fill="#FFFFFF" opacity="0.55"></rect>
 
-                                    <circle cx="110" cy="140" r="27" fill="url(#bkWindowGrad)" stroke="#2B6FE0" strokeWidth="4"></circle>
-                                    <ellipse cx="100" cy="130" rx="8" ry="5" fill="#FFFFFF" opacity="0.55"></ellipse>
+                                    <rect x="62" y="154" width="96" height="15" fill="#EDE7FB"></rect>
+                                    <rect x="150" y="154" width="8" height="15" fill="#D8CFF2"></rect>
+
+                                    <path d="M62,88 C66,18 154,18 158,88 Z" fill="url(#bkNoseGrad)"></path>
+                                    <path d="M100,26 C104,22 112,22 116,27" stroke="#C4B5FD" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.6"></path>
+
+                                    <circle cx="110" cy="128" r="29" fill="url(#bkWindowGrad)" stroke="#1E40AF" strokeWidth="4"></circle>
+                                    <circle cx="110" cy="128" r="29" fill="none" stroke="#FFFFFF" strokeWidth="1.5" opacity="0.4"></circle>
+                                    <ellipse cx="99" cy="116" rx="9" ry="5.5" fill="#FFFFFF" opacity="0.65"></ellipse>
                                 </svg>
 
                                 <div className="bk-float-icon bk-float-icon-seo d-none d-lg-flex">SEO</div>

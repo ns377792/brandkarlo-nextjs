@@ -2718,6 +2718,12 @@ h6,
     animation: bkFlameFlicker 0.9s ease-in-out infinite;
 }
 
+.bk-flame-glow {
+    transform-box: fill-box;
+    transform-origin: 50% 0%;
+    animation: bkGlowPulse 1.4s ease-in-out infinite;
+}
+
 .bk-float-icon {
     position: absolute;
     width: 54px;
@@ -2810,6 +2816,11 @@ h6,
 @keyframes bkFlameFlicker {
     0%, 100% { transform: scaleY(1) scaleX(1); }
     50% { transform: scaleY(1.14) scaleX(.92); }
+}
+
+@keyframes bkGlowPulse {
+    0%, 100% { opacity: .7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.08); }
 }
 
 @media (max-width: 991.98px) {

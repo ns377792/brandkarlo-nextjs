@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const initialState = {
   name: "",
@@ -11,6 +12,7 @@ const initialState = {
 };
 
 export default function ContactForm() {
+  const router = useRouter();
   const [formData, setFormData] = useState(initialState);
   const [status, setStatus] = useState("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -38,6 +40,7 @@ export default function ContactForm() {
 
       setStatus("success");
       setFormData(initialState);
+      router.push("/thank-you");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err.message);
